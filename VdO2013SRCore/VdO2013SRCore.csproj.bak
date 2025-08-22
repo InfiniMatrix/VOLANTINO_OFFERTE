@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E2CB695-DE7B-42DB-89EC-BEEAAACE4713}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VdO2013SRCore</RootNamespace>
+    <AssemblyName>VdO2013SRCore</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>f37f98cc</NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\vdo_bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\vdo_bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>VdO2021.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="HtmlAgilityPack, Version=1.11.24.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.24\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="MPCommonRes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acafc287d91522dd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vdo_bin\MPCommonRes.dll</HintPath>
+    </Reference>
+    <Reference Include="MPExtensionMethods, Version=3.0.0.0, Culture=neutral, PublicKeyToken=acafc287d91522dd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vdo_bin\MPExtensionMethods.dll</HintPath>
+    </Reference>
+    <Reference Include="MPLogHelper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acafc287d91522dd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vdo_bin\MPLogHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="MPUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acafc287d91522dd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vdo_bin\MPUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enums\SiteReaderMode.cs" />
+    <Compile Include="Delegates\ListCallBack.cs" />
+    <Compile Include="FeatureWrapper.cs" />
+    <Compile Include="FormElementCollection.cs" />
+    <Compile Include="HtmlHelper.cs" />
+    <Compile Include="HttpException.cs" />
+    <Compile Include="HttpNotFoundException.cs" />
+    <Compile Include="HttpRedirectNotAllowedException.cs" />
+    <Compile Include="HttpTimeoutException.cs" />
+    <Compile Include="HtmlDocumentWrapper.cs" />
+    <Compile Include="HtmlNodeWrapper.cs" />
+    <Compile Include="HtmlWebWrapper.cs" />
+    <Compile Include="Interfaces\IHtmlDocument.cs" />
+    <Compile Include="Interfaces\IHtmlNode.cs" />
+    <Compile Include="Interfaces\IHtmlWeb.cs" />
+    <Compile Include="Interfaces\ISiteReader3.cs" />
+    <Compile Include="Interfaces\ISiteReaderConfiguration.cs" />
+    <Compile Include="Interfaces\ISiteReaderLinkedCallBack.cs" />
+    <Compile Include="Interfaces\ISiteReaderOwnedCollection.cs" />
+    <Compile Include="Interfaces\ISiteReaderProgressItemCollection.cs" />
+    <Compile Include="Interfaces\ISiteReader2.cs" />
+    <Compile Include="Interfaces\ISiteReader2Factory.cs" />
+    <Compile Include="Interfaces\ISiteReader2Info.cs" />
+    <Compile Include="Interfaces\ISiteReaderLinked.cs" />
+    <Compile Include="Interfaces\Specialized\ISiteReaderOnLineCheckDataList.cs" />
+    <Compile Include="Interfaces\Specialized\ISiteReaderOnLineCheckList.cs" />
+    <Compile Include="Interfaces\ISiteReaderValueList.cs" />
+    <Compile Include="Interfaces\Specialized\ISiteReaderOnLineCheckDataListConsumer.cs" />
+    <Compile Include="Interfaces\Specialized\ISiteReaderOnLineCheckListConsumer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Delegates\ReaderChanged.cs" />
+    <Compile Include="Delegates\ReaderChanging.cs" />
+    <Compile Include="SiteReaderMergeSettings.cs" />
+    <Compile Include="SiteReaderValueListBase.cs" />
+    <Compile Include="SettingWrapper.cs" />
+    <Compile Include="SiteCrawlerFactory.cs" />
+    <Compile Include="TextRes.cs" />
+    <Compile Include="TypeExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="VdO2021.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VdO2013Core\VdO2013Core.csproj">
+      <Project>{9ea3feb2-d4ab-43da-bbab-7cb22201d120}</Project>
+      <Name>VdO2013Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VdO2013DataCore\VdO2013DataCore.csproj">
+      <Project>{85669c2f-d9d5-4a50-acdd-d2d336cccf96}</Project>
+      <Name>VdO2013DataCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VdO2013THCore\VdO2013THCore.csproj">
+      <Project>{3c3792aa-71e2-487f-bfa4-8001ceec0508}</Project>
+      <Name>VdO2013THCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti sul computer in uso. Abilitare il ripristino dei pacchetti NuGet per scaricarli. Per ulteriori informazioni, visitare http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
