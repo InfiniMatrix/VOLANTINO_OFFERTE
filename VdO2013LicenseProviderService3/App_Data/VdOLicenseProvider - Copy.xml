@@ -1,0 +1,1771 @@
+<?xml version="1.0" standalone="yes"?>
+<VdOLicenseProvider>
+  <xs:schema id="VdOLicenseProvider" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="VdOLicenseProvider" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Privilegio">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="Descrizione" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Note" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Contesto">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="Descrizione" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="AttivoDa" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="AttivoFinoA" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Note" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Utente">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="Login" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Password" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Contesto" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Contesto!Descrizione" msprop:ForeignKeyReferenceDisplayMember="Descrizione" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Email" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="AttivoDa" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="AttivoFinoA" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Note" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Distribuzione">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="Versione" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Build" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="15" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Descrizione" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="DataRilascio" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DataTermine" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Prodotto">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="DistribuzioneID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Distribuzione!ID" msprop:ForeignKeyReferenceDisplayMember="Descrizione,Versione,Build" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Versione" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Build" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="15" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Descrizione" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="DataRilascio" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DataTermine" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Cliente">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="Descrizione" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="TaxIdentifier" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="AttivoDa" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="AttivoFinoA" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Indirizzo" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Comune" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="CAP" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="10" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Email" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Telefono" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Fax" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="SitoWeb" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Note" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Attivazione">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="ClienteID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Cliente!ID" msprop:ForeignKeyReferenceDisplayMember="Descrizione" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="ProdottoID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Prodotto!ID" msprop:ForeignKeyReferenceDisplayMember="Descrizione,Versione,Build" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="PrivilegioID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Privilegio!ID" msprop:ForeignKeyReferenceDisplayMember="Descrizione" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Chiave" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="AttivoDa" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="AttivoFinoA" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Note" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Chiave">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="TimeStamp" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="ClienteCode" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="Cliente!Code" msprop:ForeignKeyReferenceDisplayMember="Descrizione" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="ProdottoCode" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="Prodotto!Code" msprop:ForeignKeyReferenceDisplayMember="Descrizione,Versione,Build" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="Chiave" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Attivazione!Chiave" msprop:ForeignKeyReferenceDisplayMember="Chiave,AttivoDa,AttivoFinoA" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="CPU" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="BIOS" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Base" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="HardDisk" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="VIDEO" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="MAC" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="256" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="AttivoDa" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="AttivoFinoA" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Note" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="WebSite">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="Name" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="NormalUrl" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="MobileUrl" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Version" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ReleaseDate" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="PageListUrl" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListUrlRedirects" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListMaxCount" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:int" />
+                <xs:element name="PageListPageNumber" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListPageCount" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListItemCountXPath" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListRagioneSocialeXPath" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListListXPath" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListFeaturesEnabled" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:boolean" />
+                <xs:element name="PageListFeaturesXPath" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListMaxImageCount" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:int" />
+                <xs:element name="PageListImageFormat" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListImageXPath" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListImageThumbListXPath" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListImageThumbActiveXPath" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PageListImageThumbNormalXPath" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="QRCodeEncoding" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:int" />
+                <xs:element name="QRCodeScale" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:int" />
+                <xs:element name="QRCodeVersion" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:int" />
+                <xs:element name="QRCodeCorrection" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:int" />
+                <xs:element name="QRCodeCharacterSet" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="QRCodeBackColor" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="QRCodeForeColor" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="QRCodeImageFormat" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="MergeDefinitionName" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="MergeDefinitionKeyFields" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="MergeDefinitionColExclude" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="MergeDefinitionRowExclude" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="WebSiteScript">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="WebSiteID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="WebSite!ID" msprop:ForeignKeyReferenceDisplayMember="Name,Version" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Nome" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Categoria" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Tipo" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Linguaggio" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="GruppoID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="GruppoIndixe" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:int" minOccurs="0" />
+                <xs:element name="GruppoCondizione" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Testo" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="Parametri" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="Column1" type="xs:string" minOccurs="0" />
+                <xs:element name="PerClienteID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Cliente!ID" msprop:ForeignKeyReferenceDisplayMember="Descrizione" msprop:PrimaryKeyIndex="-1" type="xs:long" minOccurs="0" />
+                <xs:element name="PerProdottoID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Prodotto!ID" msprop:ForeignKeyReferenceDisplayMember="Descrizione,Versione,Build" msprop:PrimaryKeyIndex="-1" type="xs:long" minOccurs="0" />
+                <xs:element name="AttivoDa" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="AttivoFinoA" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Note" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="WebSiteFeature">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="WebSiteID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="WebSite!ID" msprop:ForeignKeyReferenceDisplayMember="Name,Version" msprop:PrimaryKeyIndex="1" type="xs:long" />
+                <xs:element name="Name" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="XPath" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Caption" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Version" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" default="2.00.00.00">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ReleaseDate" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:ForeignKeyReferenceDisplayMember="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="PerClienteID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Cliente!ID" msprop:ForeignKeyReferenceDisplayMember="Descrizione" msprop:PrimaryKeyIndex="-1" type="xs:long" minOccurs="0" />
+                <xs:element name="PerProdottoID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Prodotto!ID" msprop:ForeignKeyReferenceDisplayMember="Descrizione,Versione,Build" msprop:PrimaryKeyIndex="-1" type="xs:long" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1">
+        <xs:selector xpath=".//Privilegio" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Constraint2">
+        <xs:selector xpath=".//Privilegio" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="Contesto_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//Contesto" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Contesto_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//Contesto" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="Constraint3">
+        <xs:selector xpath=".//Contesto" />
+        <xs:field xpath="Descrizione" />
+      </xs:unique>
+      <xs:unique name="Utente_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//Utente" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Utente_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//Utente" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="Utente_Constraint3" msdata:ConstraintName="Constraint3">
+        <xs:selector xpath=".//Utente" />
+        <xs:field xpath="Login" />
+      </xs:unique>
+      <xs:unique name="Constraint4">
+        <xs:selector xpath=".//Utente" />
+        <xs:field xpath="Email" />
+      </xs:unique>
+      <xs:unique name="Distribuzione_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//Distribuzione" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Distribuzione_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//Distribuzione" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="Prodotto_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//Prodotto" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Prodotto_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//Prodotto" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="Cliente_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//Cliente" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Cliente_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//Cliente" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="Cliente_Constraint3" msdata:ConstraintName="Constraint3">
+        <xs:selector xpath=".//Cliente" />
+        <xs:field xpath="Descrizione" />
+      </xs:unique>
+      <xs:unique name="Cliente_Constraint4" msdata:ConstraintName="Constraint4">
+        <xs:selector xpath=".//Cliente" />
+        <xs:field xpath="TaxIdentifier" />
+      </xs:unique>
+      <xs:unique name="Attivazione_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//Attivazione" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Attivazione_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//Attivazione" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="Attivazione_Constraint3" msdata:ConstraintName="Constraint3">
+        <xs:selector xpath=".//Attivazione" />
+        <xs:field xpath="Chiave" />
+      </xs:unique>
+      <xs:unique name="Chiave_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//Chiave" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Chiave_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//Chiave" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="Chiave_Constraint3" msdata:ConstraintName="Constraint3">
+        <xs:selector xpath=".//Chiave" />
+        <xs:field xpath="ClienteCode" />
+      </xs:unique>
+      <xs:unique name="Chiave_Constraint4" msdata:ConstraintName="Constraint4">
+        <xs:selector xpath=".//Chiave" />
+        <xs:field xpath="ProdottoCode" />
+      </xs:unique>
+      <xs:unique name="Constraint5">
+        <xs:selector xpath=".//Chiave" />
+        <xs:field xpath="Chiave" />
+      </xs:unique>
+      <xs:unique name="WebSite_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//WebSite" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="WebSite_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//WebSite" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="WebSite_Constraint3" msdata:ConstraintName="Constraint3">
+        <xs:selector xpath=".//WebSite" />
+        <xs:field xpath="Name" />
+      </xs:unique>
+      <xs:unique name="WebSite_Constraint4" msdata:ConstraintName="Constraint4">
+        <xs:selector xpath=".//WebSite" />
+        <xs:field xpath="NormalUrl" />
+      </xs:unique>
+      <xs:unique name="WebSite_Constraint5" msdata:ConstraintName="Constraint5">
+        <xs:selector xpath=".//WebSite" />
+        <xs:field xpath="MobileUrl" />
+      </xs:unique>
+      <xs:unique name="WebSiteScript_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//WebSiteScript" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="WebSiteScript_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//WebSiteScript" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="WebSiteScript_Constraint3" msdata:ConstraintName="Constraint3">
+        <xs:selector xpath=".//WebSiteScript" />
+        <xs:field xpath="Nome" />
+      </xs:unique>
+      <xs:unique name="WebSiteFeature_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//WebSiteFeature" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="WebSiteFeature_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//WebSiteFeature" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:keyref name="WebSiteFeaturi2" refer="Prodotto_Constraint1" msprop:rel_ForeignKeyReferenceDisplayMember="Descrizione,Versione,Build">
+        <xs:selector xpath=".//WebSiteFeature" />
+        <xs:field xpath="PerProdottoID" />
+      </xs:keyref>
+      <xs:keyref name="WebSiteFeaturi1" refer="Cliente_Constraint1" msprop:rel_ForeignKeyReferenceDisplayMember="Descrizione">
+        <xs:selector xpath=".//WebSiteFeature" />
+        <xs:field xpath="PerClienteID" />
+      </xs:keyref>
+      <xs:keyref name="WebSiteFeaturi" refer="WebSite_Constraint1" msprop:rel_ForeignKeyReferenceDisplayMember="Name,Version">
+        <xs:selector xpath=".//WebSiteFeature" />
+        <xs:field xpath="WebSiteID" />
+      </xs:keyref>
+      <xs:keyref name="WebSiteScript2" refer="Prodotto_Constraint1" msprop:rel_ForeignKeyReferenceDisplayMember="Descrizione,Versione,Build">
+        <xs:selector xpath=".//WebSiteScript" />
+        <xs:field xpath="PerProdottoID" />
+      </xs:keyref>
+      <xs:keyref name="WebSiteScript1" refer="Cliente_Constraint1" msprop:rel_ForeignKeyReferenceDisplayMember="Descrizione">
+        <xs:selector xpath=".//WebSiteScript" />
+        <xs:field xpath="PerClienteID" />
+      </xs:keyref>
+      <xs:keyref name="WebSiteScript" refer="WebSite_Constraint1" msprop:rel_ForeignKeyReferenceDisplayMember="Name,Version">
+        <xs:selector xpath=".//WebSiteScript" />
+        <xs:field xpath="WebSiteID" />
+      </xs:keyref>
+      <xs:keyref name="Chiavi" refer="Cliente_Constraint2" msprop:rel_ForeignKeyReferenceDisplayMember="Descrizione">
+        <xs:selector xpath=".//Chiave" />
+        <xs:field xpath="ClienteCode" />
+      </xs:keyref>
+      <xs:keyref name="Chiavi1" refer="Prodotto_Constraint2" msprop:rel_ForeignKeyReferenceDisplayMember="Descrizione,Versione,Build">
+        <xs:selector xpath=".//Chiave" />
+        <xs:field xpath="ProdottoCode" />
+      </xs:keyref>
+      <xs:keyref name="Chiavi2" refer="Attivazione_Constraint3" msprop:rel_ForeignKeyReferenceDisplayMember="Chiave,AttivoDa,AttivoFinoA">
+        <xs:selector xpath=".//Chiave" />
+        <xs:field xpath="Chiave" />
+      </xs:keyref>
+      <xs:keyref name="Attivazioni" refer="Cliente_Constraint1" msprop:rel_ForeignKeyReferenceDisplayMember="Descrizione">
+        <xs:selector xpath=".//Attivazione" />
+        <xs:field xpath="ClienteID" />
+      </xs:keyref>
+      <xs:keyref name="Attivazioni1" refer="Prodotto_Constraint1" msprop:rel_ForeignKeyReferenceDisplayMember="Descrizione,Versione,Build">
+        <xs:selector xpath=".//Attivazione" />
+        <xs:field xpath="ProdottoID" />
+      </xs:keyref>
+      <xs:keyref name="Attivazioni2" refer="Constraint1" msprop:rel_ForeignKeyReferenceDisplayMember="Descrizione">
+        <xs:selector xpath=".//Attivazione" />
+        <xs:field xpath="PrivilegioID" />
+      </xs:keyref>
+      <xs:keyref name="Prodotti" refer="Distribuzione_Constraint1" msprop:rel_ForeignKeyReferenceDisplayMember="Descrizione,Versione,Build">
+        <xs:selector xpath=".//Prodotto" />
+        <xs:field xpath="DistribuzioneID" />
+      </xs:keyref>
+      <xs:keyref name="Utenti" refer="Constraint3" msprop:rel_ForeignKeyReferenceDisplayMember="Descrizione">
+        <xs:selector xpath=".//Utente" />
+        <xs:field xpath="Contesto" />
+      </xs:keyref>
+    </xs:element>
+  </xs:schema>
+  <Privilegio>
+    <ID>0</ID>
+    <Code>3a809869-e5cc-40ca-bb47-32501907bac2</Code>
+    <Descrizione>Nessuna</Descrizione>
+  </Privilegio>
+  <Privilegio>
+    <ID>1</ID>
+    <Code>ebcc5e85-477d-4eca-94c5-d388a46fd806</Code>
+    <Descrizione>Amministrativa</Descrizione>
+  </Privilegio>
+  <Privilegio>
+    <ID>2</ID>
+    <Code>b194f9be-acd3-4980-857b-9fcbd410e58e</Code>
+    <Descrizione>Standard</Descrizione>
+  </Privilegio>
+  <Privilegio>
+    <ID>3</ID>
+    <Code>2c622183-08ef-46fb-85ca-2f575915a9d0</Code>
+    <Descrizione>Avanzata</Descrizione>
+  </Privilegio>
+  <Privilegio>
+    <ID>4</ID>
+    <Code>23931985-7db3-4514-987d-1d7a03afa284</Code>
+    <Descrizione>Demo</Descrizione>
+  </Privilegio>
+  <Contesto>
+    <ID>0</ID>
+    <Code>1af9af15-f70a-41c5-8607-4a4130fe86d9</Code>
+    <Descrizione>admins</Descrizione>
+    <AttivoDa>2014-02-05T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2113-12-31T23:00:00Z</AttivoFinoA>
+  </Contesto>
+  <Contesto>
+    <ID>1</ID>
+    <Code>52762856-7fed-45b8-a96f-7a8d6e93f2c3</Code>
+    <Descrizione>clienti</Descrizione>
+    <AttivoDa>2014-02-05T23:00:00Z</AttivoDa>
+  </Contesto>
+  <Utente>
+    <ID>0</ID>
+    <Code>ec07858c-e4c6-420c-baf0-f9f57cd37ed9</Code>
+    <Login>admin</Login>
+    <Password>admin</Password>
+    <Contesto>admins</Contesto>
+    <Email>mancio76@gmail.com</Email>
+    <AttivoDa>2014-02-05T23:00:00Z</AttivoDa>
+  </Utente>
+  <Utente>
+    <ID>1</ID>
+    <Code>f8af6186-bfd3-4525-987b-379bbb873f05</Code>
+    <Login>cliente</Login>
+    <Password>cliente</Password>
+    <Contesto>clienti</Contesto>
+    <Email />
+    <AttivoDa>2014-02-05T23:00:00Z</AttivoDa>
+  </Utente>
+  <Distribuzione>
+    <ID>0</ID>
+    <Code>d746702d-df43-452a-97fa-a2d6a56338ed</Code>
+    <Versione>1.00.00</Versione>
+    <Build />
+    <Descrizione>Vetrina delle Offerte</Descrizione>
+    <DataRilascio>2014-02-05T23:00:00Z</DataRilascio>
+  </Distribuzione>
+  <Distribuzione>
+    <ID>1</ID>
+    <Code>b49ec473-9658-4960-9b0b-d0d2c21fbeaa</Code>
+    <Versione>1.00.00</Versione>
+    <Build />
+    <Descrizione>Volantino delle Offerte</Descrizione>
+    <DataRilascio>2014-02-05T23:00:00Z</DataRilascio>
+  </Distribuzione>
+  <Prodotto>
+    <ID>0</ID>
+    <Code>f890da1b-01b4-4b6c-bf80-2d5a6074465c</Code>
+    <DistribuzioneID>0</DistribuzioneID>
+    <Versione>1.00.00</Versione>
+    <Build />
+    <Descrizione>Vetrina delle Offerte</Descrizione>
+    <DataRilascio>2014-02-05T23:00:00Z</DataRilascio>
+  </Prodotto>
+  <Prodotto>
+    <ID>1</ID>
+    <Code>31bceb88-55e6-4295-a980-ebf341a27edf</Code>
+    <DistribuzioneID>1</DistribuzioneID>
+    <Versione>1.00.00</Versione>
+    <Build />
+    <Descrizione>Modulo Principale</Descrizione>
+    <DataRilascio>2014-02-05T23:00:00Z</DataRilascio>
+    <DataTermine>2019-12-11T23:00:00Z</DataTermine>
+  </Prodotto>
+  <Prodotto>
+    <ID>2</ID>
+    <Code>71b270ff-2ee4-430c-a482-04667a182b3b</Code>
+    <DistribuzioneID>1</DistribuzioneID>
+    <Versione>1.00.00</Versione>
+    <Build />
+    <Descrizione>Modulo Calendario</Descrizione>
+    <DataRilascio>2014-05-30T22:00:00Z</DataRilascio>
+  </Prodotto>
+  <Prodotto>
+    <ID>3</ID>
+    <Code>30a399d4-a92d-47de-a67b-9d578bc0ffe3</Code>
+    <DistribuzioneID>1</DistribuzioneID>
+    <Versione>1.00.00</Versione>
+    <Build />
+    <Descrizione>Modulo GoolgeSync per Calendario</Descrizione>
+    <DataRilascio>2014-05-29T22:00:00Z</DataRilascio>
+  </Prodotto>
+  <Cliente>
+    <ID>0</ID>
+    <Code>27d3361d-af6c-4247-b255-b88c9d0306e0</Code>
+    <Descrizione>admin</Descrizione>
+    <TaxIdentifier>admin***************</TaxIdentifier>
+    <AttivoDa>2014-02-06T00:00:00Z</AttivoDa>
+    <AttivoFinoA>0001-01-01T00:00:00Z</AttivoFinoA>
+    <Indirizzo />
+    <Comune />
+    <CAP />
+    <Email />
+    <Telefono />
+    <Fax />
+    <SitoWeb />
+    <Note />
+  </Cliente>
+  <Cliente>
+    <ID>1</ID>
+    <Code>7e948224-e56b-4c76-81c0-424e9aa32a78</Code>
+    <Descrizione>cliente</Descrizione>
+    <TaxIdentifier>cliente*************</TaxIdentifier>
+    <AttivoDa>2014-02-06T00:00:00Z</AttivoDa>
+    <AttivoFinoA>0001-01-01T00:00:00Z</AttivoFinoA>
+    <Indirizzo />
+    <Comune />
+    <CAP />
+    <Email />
+    <Telefono />
+    <Fax />
+    <SitoWeb />
+    <Note />
+  </Cliente>
+  <Cliente>
+    <ID>2</ID>
+    <Code>f690a4bd-7c07-4b13-920b-d4a5bfb8ad20</Code>
+    <Descrizione>Paolo Mancini</Descrizione>
+    <TaxIdentifier>MNCPLA76A29H501S</TaxIdentifier>
+    <AttivoDa>2014-02-05T23:00:00Z</AttivoDa>
+    <Indirizzo>Via Arpino 7</Indirizzo>
+    <Comune>Roma</Comune>
+    <CAP>00100</CAP>
+    <Email>paolo@ar2001.com</Email>
+    <Telefono>3493245385</Telefono>
+    <Fax>--</Fax>
+    <SitoWeb>www.ar2001.com</SitoWeb>
+  </Cliente>
+  <Cliente>
+    <ID>3</ID>
+    <Code>23443cc5-d30d-4707-aef4-0658292f9307</Code>
+    <Descrizione>Stile Consulting</Descrizione>
+    <TaxIdentifier>012345678901</TaxIdentifier>
+    <AttivoDa>2014-02-15T23:00:00Z</AttivoDa>
+    <Email>info@stileconsulting.eu</Email>
+  </Cliente>
+  <Cliente>
+    <ID>4</ID>
+    <Code>ed5a145f-8661-4915-a034-2229c25b587a</Code>
+    <Descrizione>Prova</Descrizione>
+    <TaxIdentifier>00000000000</TaxIdentifier>
+    <AttivoDa>2014-02-21T23:00:00Z</AttivoDa>
+    <Email>prova@qr-site.it</Email>
+  </Cliente>
+  <Cliente>
+    <ID>5</ID>
+    <Code>aa82aa91-76fc-41c7-a495-04d1c4196f67</Code>
+    <Descrizione>Marco</Descrizione>
+    <TaxIdentifier>12345678901</TaxIdentifier>
+    <AttivoDa>2014-02-22T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2019-12-12T20:00:00Z</AttivoFinoA>
+    <Indirizzo>Via Atene, 11</Indirizzo>
+    <Comune>Ciampino</Comune>
+    <CAP>00043</CAP>
+    <Email>info@logicnet.it</Email>
+    <Telefono>06 79315737</Telefono>
+    <Fax>06 89284901</Fax>
+    <SitoWeb>www.vetrinadelleofferte.it</SitoWeb>
+    <Note>Marco</Note>
+  </Cliente>
+  <Cliente>
+    <ID>6</ID>
+    <Code>0502b5be-551f-4f90-a449-45d48d8a890a</Code>
+    <Descrizione>Prova VM Win7 x86</Descrizione>
+    <TaxIdentifier>00112233445</TaxIdentifier>
+    <AttivoDa>2014-02-25T23:00:00Z</AttivoDa>
+    <Email>vw_win7x87@qr-site.it</Email>
+  </Cliente>
+  <Cliente>
+    <ID>7</ID>
+    <Code>89affb48-8fd3-42f9-af48-0e99ada347a8</Code>
+    <Descrizione>Prova Win 7 x86</Descrizione>
+    <TaxIdentifier>00112233440</TaxIdentifier>
+    <AttivoDa>2014-02-25T23:00:00Z</AttivoDa>
+    <Email>win7x86@qr-site.it</Email>
+  </Cliente>
+  <Cliente>
+    <ID>8</ID>
+    <Code>383185b9-b434-40c6-a513-d29ae12429fa</Code>
+    <Descrizione>Prova Win7 x86</Descrizione>
+    <TaxIdentifier>11223344550</TaxIdentifier>
+    <AttivoDa>2014-02-25T23:00:00Z</AttivoDa>
+    <Email>win7xx86@qr-site.it</Email>
+  </Cliente>
+  <Cliente>
+    <ID>9</ID>
+    <Code>b804c5fb-f902-46da-9dca-7efdc98dd24e</Code>
+    <Descrizione>ENEI Immobiliare</Descrizione>
+    <TaxIdentifier>12657701004</TaxIdentifier>
+    <AttivoDa>2014-03-10T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2015-03-08T23:00:00Z</AttivoFinoA>
+    <Indirizzo>Piazza Garibaldi, 24</Indirizzo>
+    <Comune>Anzio RM</Comune>
+    <CAP>00042</CAP>
+    <Email>enei.immobiliare@libero.it</Email>
+    <Telefono>06 9846610</Telefono>
+    <Fax>06 97846437</Fax>
+    <SitoWeb>www.enei.immobiliare.it</SitoWeb>
+    <Note>Giuseppe Enei</Note>
+  </Cliente>
+  <Cliente>
+    <ID>10</ID>
+    <Code>f6a09ff2-2f3a-410f-9f68-6b86c5441b19</Code>
+    <Descrizione>Casa Broker Group Srl</Descrizione>
+    <TaxIdentifier>10559311005</TaxIdentifier>
+    <AttivoDa>2014-04-10T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2015-04-08T22:00:00Z</AttivoFinoA>
+    <Indirizzo>Via Federico Delpino, 79</Indirizzo>
+    <Comune>Roma</Comune>
+    <CAP>00171</CAP>
+    <Email>reagency3immobiliare@libero.it</Email>
+    <Telefono>06 2154008</Telefono>
+    <Note>Titolare Carlo</Note>
+  </Cliente>
+  <Cliente>
+    <ID>11</ID>
+    <Code>2865df40-468f-41b2-b73e-11bf764d9ec6</Code>
+    <Descrizione>MAS Service Srl</Descrizione>
+    <TaxIdentifier>10376531009</TaxIdentifier>
+    <AttivoDa>2014-04-23T22:00:00Z</AttivoDa>
+    <Email>masservicesrl@gmail.com</Email>
+  </Cliente>
+  <Cliente>
+    <ID>12</ID>
+    <Code>6b431cfb-d51a-49b9-a762-4cb398d89779</Code>
+    <Descrizione>Without Limits</Descrizione>
+    <TaxIdentifier>08162001005</TaxIdentifier>
+    <AttivoDa>2014-05-12T22:00:00Z</AttivoDa>
+    <Email>rm.ciampino@immobiliarewl.it</Email>
+  </Cliente>
+  <Cliente>
+    <ID>13</ID>
+    <Code>4eb0f1b3-6b31-4a1e-97bb-67999a20a455</Code>
+    <Descrizione>valorecasa</Descrizione>
+    <TaxIdentifier>11111111111</TaxIdentifier>
+    <AttivoDa>2014-05-16T22:00:00Z</AttivoDa>
+    <Email>info@valorecasa.it</Email>
+  </Cliente>
+  <Cliente>
+    <ID>14</ID>
+    <Code>e51823ad-2b8d-4beb-b7f9-bcc83dba1609</Code>
+    <Descrizione>Ereneo Pacific</Descrizione>
+    <TaxIdentifier>10426051008</TaxIdentifier>
+    <AttivoDa>2014-06-22T22:00:00Z</AttivoDa>
+    <Email>pacifici@pacifici.it</Email>
+  </Cliente>
+  <Cliente>
+    <ID>15</ID>
+    <Code>e5b40fac-e953-49ad-866a-d82ccb65c010</Code>
+    <Descrizione>CIPIEMME</Descrizione>
+    <TaxIdentifier>05586171000</TaxIdentifier>
+    <AttivoDa>2014-06-26T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2015-06-25T22:00:00Z</AttivoFinoA>
+    <Email>info@cpmsrl.com</Email>
+  </Cliente>
+  <Cliente>
+    <ID>16</ID>
+    <Code>d1a96734-77dd-4384-a5f1-50bced2e5f7c</Code>
+    <Descrizione>PROGEACASA</Descrizione>
+    <TaxIdentifier>09769521007</TaxIdentifier>
+    <AttivoDa>2014-07-21T22:00:00Z</AttivoDa>
+    <Email>frimm@progeacasa.it</Email>
+  </Cliente>
+  <Cliente>
+    <ID>17</ID>
+    <Code>aea239cd-e3ff-4dcb-923d-4688b82e8e1f</Code>
+    <Descrizione>Logicnet</Descrizione>
+    <TaxIdentifier>10039881007</TaxIdentifier>
+    <AttivoDa>2014-07-23T22:00:00Z</AttivoDa>
+    <Email>mancini@logicnet.it</Email>
+  </Cliente>
+  <Attivazione>
+    <ID>0</ID>
+    <Code>bbca9d63-1bdb-4137-b8e2-56edba1b5a9a</Code>
+    <ClienteID>1</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>4</PrivilegioID>
+    <Chiave>prova</Chiave>
+    <AttivoDa>2014-01-31T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-02-27T23:00:00Z</AttivoFinoA>
+  </Attivazione>
+  <Attivazione>
+    <ID>1</ID>
+    <Code>190e0d3f-0318-44cc-9312-d5304c700aa0</Code>
+    <ClienteID>2</ClienteID>
+    <ProdottoID>0</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a demo key(2014-02-06 18:30:19.+01:00)</Chiave>
+    <AttivoDa>2014-02-05T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-03-05T23:00:00Z</AttivoFinoA>
+    <Note>Subscribed on 2014-02-06 18:30:31</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>2</ID>
+    <Code>53390861-b554-4664-8456-ad22d6600ecb</Code>
+    <ClienteID>2</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a demo key(2014-02-06 18:30:34.+01:00)</Chiave>
+    <AttivoDa>2014-02-05T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-07-31T21:00:00Z</AttivoFinoA>
+    <Note>Subscribed on 2014-02-06 18:30:34</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>3</ID>
+    <Code>17aac670-e43c-413a-af12-ffab57ee7eff</Code>
+    <ClienteID>3</ClienteID>
+    <ProdottoID>0</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a Vetrina delle Offerte DEMO key(2014-02-16 20:37:46)</Chiave>
+    <AttivoDa>2014-02-15T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-03-15T23:00:00Z</AttivoFinoA>
+    <Note>Subscribed on 2014-02-16 21:37:46</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>4</ID>
+    <Code>96ec0b10-bd5e-44ec-9867-38e3dfe38cd4</Code>
+    <ClienteID>3</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a Volantino delle Offerte DEMO key(2014-02-16 20:37:46)</Chiave>
+    <AttivoDa>2014-02-15T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2019-12-12T22:00:00Z</AttivoFinoA>
+    <Note>Subscribed on 2014-02-16 21:37:46</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>5</ID>
+    <Code>12aa0bb7-8010-4579-97e5-a7b4e10f7828</Code>
+    <ClienteID>4</ClienteID>
+    <ProdottoID>0</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a Vetrina delle Offerte DEMO key(2014-02-22 17:45:52)</Chiave>
+    <AttivoDa>2017-12-31T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2018-12-31T23:00:00Z</AttivoFinoA>
+    <Note>Subscribed on 2014-02-22 18:45:52</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>31</ID>
+    <Code>b46c77a9-b9be-4757-b3a7-b871acc1bd05</Code>
+    <ClienteID>8</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>4</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-02-26 18:43:18</Chiave>
+    <AttivoDa>2014-02-25T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-03-25T23:00:00Z</AttivoFinoA>
+    <Note>Valid until 26/03/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>35</ID>
+    <Code>bcca60e9-d170-4a8d-bfa3-8f32addff639</Code>
+    <ClienteID>9</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>2</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-03-11 10:03:13</Chiave>
+    <AttivoDa>2014-03-10T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2015-02-15T22:00:00Z</AttivoFinoA>
+    <Note>Valido fino al 15/02/2015</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>36</ID>
+    <Code>e26accff-f491-4f30-a278-9a4c101844d7</Code>
+    <ClienteID>0</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-03-12 20:58:00</Chiave>
+    <AttivoDa>2014-03-11T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-04-11T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 12/04/2019</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>37</ID>
+    <Code>0ad1f092-349f-4193-9e9a-3e7e0643fe71</Code>
+    <ClienteID>3</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-03-19 13:47:29</Chiave>
+    <AttivoDa>2014-03-18T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-04-18T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 19/04/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>39</ID>
+    <Code>dc9b2582-725e-4904-8b25-a82074dcd01f</Code>
+    <ClienteID>10</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>2</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-04-11 14:46:20</Chiave>
+    <AttivoDa>2014-04-10T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2015-04-09T22:00:00Z</AttivoFinoA>
+    <Note>Valida fino al 09/04/2015</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>40</ID>
+    <Code>8e79a451-bfba-4d2f-8741-9e41a6244c7b</Code>
+    <ClienteID>5</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-04-12 08:49:42</Chiave>
+    <AttivoDa>2014-04-11T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2020-05-11T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 12/05/2019</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>41</ID>
+    <Code>599009f3-471c-4c6f-8500-787f04ef9072</Code>
+    <ClienteID>11</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>2</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-04-24 10:11:25</Chiave>
+    <AttivoDa>2014-04-23T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2015-05-23T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 24/05/2015</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>42</ID>
+    <Code>d7921516-fbd1-4d2d-976a-f3880e2e7ad4</Code>
+    <ClienteID>12</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>4</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-05-13 10:56:48</Chiave>
+    <AttivoDa>2014-05-12T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-06-12T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 13/06/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>43</ID>
+    <Code>fa30792b-50d5-4544-9952-571c7dcc8918</Code>
+    <ClienteID>13</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>4</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-05-17 16:16:16</Chiave>
+    <AttivoDa>2014-05-16T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-06-16T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 17/06/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>44</ID>
+    <Code>74f8dbea-5c47-4515-a859-7b92e56d6a8e</Code>
+    <ClienteID>4</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-05-22 12:56:59</Chiave>
+    <AttivoDa>2014-05-21T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2018-12-31T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 22/06/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>45</ID>
+    <Code>66e33590-421f-428d-b012-5d68619fa37c</Code>
+    <ClienteID>2</ClienteID>
+    <ProdottoID>2</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>Test</Chiave>
+    <AttivoDa>2014-05-22T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-07-30T22:00:00Z</AttivoFinoA>
+  </Attivazione>
+  <Attivazione>
+    <ID>46</ID>
+    <Code>074c47c5-0055-4bcb-b474-9c8b45220a3e</Code>
+    <ClienteID>2</ClienteID>
+    <ProdottoID>3</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>Test 1</Chiave>
+    <AttivoDa>2014-05-22T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-07-30T22:00:00Z</AttivoFinoA>
+  </Attivazione>
+  <Attivazione>
+    <ID>47</ID>
+    <Code>0cf63939-7912-418a-87a9-a8b9ed4d2cdf</Code>
+    <ClienteID>4</ClienteID>
+    <ProdottoID>2</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>Modulo Calendario</Chiave>
+    <AttivoDa>2014-05-31T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2018-12-31T22:00:00Z</AttivoFinoA>
+  </Attivazione>
+  <Attivazione>
+    <ID>48</ID>
+    <Code>7c1d494d-0c01-4d66-a8d8-1c50a33ae40e</Code>
+    <ClienteID>14</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>4</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-06-23 10:06:15</Chiave>
+    <AttivoDa>2014-06-22T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-07-22T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 23/07/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>49</ID>
+    <Code>1476f3e6-58f5-409d-a10b-a284075f8768</Code>
+    <ClienteID>15</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>2</PrivilegioID>
+    <Chiave>Licenza manuale</Chiave>
+    <AttivoDa>2014-06-26T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2015-06-25T22:00:00Z</AttivoFinoA>
+    <Note>(Inserimento manuale PM)</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>50</ID>
+    <Code>9bfc6db9-9022-46b0-b27f-b6becb72e025</Code>
+    <ClienteID>4</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-06-27 11:25:29</Chiave>
+    <AttivoDa>2014-06-26T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2018-12-31T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 27/07/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>52</ID>
+    <Code>af76bbd6-d038-4c06-b7a1-d5c23b173e29</Code>
+    <ClienteID>5</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>4</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-07-17 10:10:05</Chiave>
+    <AttivoDa>2014-07-16T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-08-16T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 17/08/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>53</ID>
+    <Code>c79aed7b-9921-454b-bcee-8d9143fd33f8</Code>
+    <ClienteID>13</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>4</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-07-17 10:11:41</Chiave>
+    <AttivoDa>2014-07-16T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-08-16T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 17/08/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>54</ID>
+    <Code>8898f409-71a6-4e72-b323-a4fd098c69ff</Code>
+    <ClienteID>16</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>2</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-07-22 16:18:42</Chiave>
+    <AttivoDa>2014-07-21T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2015-07-21T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 21/07/2015</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>55</ID>
+    <Code>f97fd8b9-8bc7-4fd6-9108-11c069ffaff1</Code>
+    <ClienteID>17</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-07-24 19:39:49</Chiave>
+    <AttivoDa>2014-07-23T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2016-08-23T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 24/08/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>56</ID>
+    <Code>f57ddec8-9dbe-40d4-bba5-f71ed5eba5f5</Code>
+    <ClienteID>2</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>4</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-08-10 10:03:30</Chiave>
+    <AttivoDa>2014-08-09T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-09-09T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 10/09/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>57</ID>
+    <Code>258c158a-86fe-462a-9de6-db679fb01dd5</Code>
+    <ClienteID>2</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>1</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-09-20 11:24:42</Chiave>
+    <AttivoDa>2014-09-19T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-10-19T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 20/10/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>58</ID>
+    <Code>1d20cef5-1eef-4734-b58a-fddcf8f5df8f</Code>
+    <ClienteID>2</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>4</PrivilegioID>
+    <Chiave>This is a Demo key issued 2014-09-20 15:55:19</Chiave>
+    <AttivoDa>2014-09-19T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2014-10-19T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 20/10/2014</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>59</ID>
+    <Code>258a3058-a926-468e-83d8-bf818e480451</Code>
+    <ClienteID>4</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>4</PrivilegioID>
+    <Chiave>This is a Demo key issued 2017-03-21 16:30:51</Chiave>
+    <AttivoDa>2017-03-20T23:00:00Z</AttivoDa>
+    <AttivoFinoA>2017-04-20T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 21/04/2017</Note>
+  </Attivazione>
+  <Attivazione>
+    <ID>60</ID>
+    <Code>b7d0a282-1e74-45e6-96b6-6d45fb007fd6</Code>
+    <ClienteID>4</ClienteID>
+    <ProdottoID>1</ProdottoID>
+    <PrivilegioID>4</PrivilegioID>
+    <Chiave>This is a Demo key issued 2017-04-04 17:22:54</Chiave>
+    <AttivoDa>2017-04-03T22:00:00Z</AttivoDa>
+    <AttivoFinoA>2017-05-03T22:00:00Z</AttivoFinoA>
+    <Note>Valid until 04/05/2017</Note>
+  </Attivazione>
+  <WebSite>
+    <ID>0</ID>
+    <Code>59ff4a13-278a-4d15-b5ae-0f8038acaf5a</Code>
+    <Name>Immobiliare</Name>
+    <NormalUrl>https://www.immobiliare.it</NormalUrl>
+    <MobileUrl>http://m.immobiliare.it</MobileUrl>
+    <Version>2.0.1.7</Version>
+    <ReleaseDate>2017-02-01T00:00:00Z</ReleaseDate>
+    <PageListUrl>/agenzie_immobiliari/{codice agenzia}.html?pag={indice lista}</PageListUrl>
+    <PageListUrlRedirects>/terreni</PageListUrlRedirects>
+    <PageListMaxCount>25</PageListMaxCount>
+    <PageListPageCount>//*[@id='pageCount']/strong[2]</PageListPageCount>
+    <PageListItemCountXPath>//*[@id='pageCount']</PageListItemCountXPath>
+    <PageListRagioneSocialeXPath>//*[@class='body-content agency-page']//*[@class='agency-title text-uppercase']</PageListRagioneSocialeXPath>
+    <PageListListXPath>//*[@id='listing-container']/li//p[@class='titolo text-primary']/a</PageListListXPath>
+    <PageListFeaturesEnabled>true</PageListFeaturesEnabled>
+    <PageListFeaturesXPath>//*[@id='sticky-contact-bottom']//*[@class='row section-data']/dl</PageListFeaturesXPath>
+    <PageListMaxImageCount>3</PageListMaxImageCount>
+    <PageListImageFormat />
+    <PageListImageXPath>//*[@id='foto']//*[@class='labs-gallery__slide']/img</PageListImageXPath>
+    <PageListImageThumbListXPath />
+    <PageListImageThumbActiveXPath />
+    <PageListImageThumbNormalXPath />
+    <QRCodeEncoding>0</QRCodeEncoding>
+    <QRCodeScale>1</QRCodeScale>
+    <QRCodeVersion>0</QRCodeVersion>
+    <QRCodeCorrection>3</QRCodeCorrection>
+    <QRCodeCharacterSet>Default UTF-8</QRCodeCharacterSet>
+    <QRCodeBackColor>White</QRCodeBackColor>
+    <QRCodeForeColor>Black</QRCodeForeColor>
+    <QRCodeImageFormat>Png</QRCodeImageFormat>
+    <MergeDefinitionName>VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</MergeDefinitionName>
+    <MergeDefinitionKeyFields>IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|MergeContext=Column|MergeKind=IsKey|ReaderName|Codice|</MergeDefinitionKeyFields>
+    <MergeDefinitionColExclude>IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|MergeContext=Column|MergeKind=Exclude|Ordinal|</MergeDefinitionColExclude>
+    <MergeDefinitionRowExclude>IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|MergeContext=Row|MergeKind=Exclude|Status=Locked|</MergeDefinitionRowExclude>
+  </WebSite>
+  <WebSite>
+    <ID>1</ID>
+    <Code>975d8c0a-3600-4f63-b9b1-a37c4745438a</Code>
+    <Name>Casa</Name>
+    <NormalUrl>http://www.casa.it</NormalUrl>
+    <MobileUrl>http://m.casa.it</MobileUrl>
+    <Version>2.0.1.7</Version>
+    <ReleaseDate>2017-02-01T00:00:00Z</ReleaseDate>
+    <PageListUrl>/vendita-residenziale/da-{codice agenzia}/lista-{indice lista}|/vendita-commerciale/da-{codice agenzia}/lista-{indice lista}|/affitti-residenziale/da-{codice agenzia}/lista-{indice lista}|/affitti-commerciale/da-{codice agenzia}/lista-{indice lista}|/affitti-vacanze/da-{codice agenzia}/lista-{indice lista}</PageListUrl>
+    <PageListUrlRedirects />
+    <PageListMaxCount>25</PageListMaxCount>
+    <PageListPageCount>//*[@class='resultsInfo']/h1[1]/span[1]</PageListPageCount>
+    <PageListItemCountXPath>//*[@class='resultsInfo']/span[1]</PageListItemCountXPath>
+    <PageListRagioneSocialeXPath>//*[@class='agency-body']/h2</PageListRagioneSocialeXPath>
+    <PageListListXPath>//*[@class='listing-list']/li/a</PageListListXPath>
+    <PageListFeaturesEnabled>true</PageListFeaturesEnabled>
+    <PageListFeaturesXPath>//*[@id='primaryContent']//*[@id='features']//*[@class='featureListWrapper']//*[@class='featureList']/ul/li</PageListFeaturesXPath>
+    <PageListMaxImageCount>5</PageListMaxImageCount>
+    <PageListImageFormat>800x600</PageListImageFormat>
+    <PageListImageXPath />
+    <PageListImageThumbListXPath>//*[@class='image-gallery-thumbnails-container']/ul/li/img</PageListImageThumbListXPath>
+    <PageListImageThumbActiveXPath>./img[1]</PageListImageThumbActiveXPath>
+    <PageListImageThumbNormalXPath>//div[@id='app']//div[@class='info-gallery']//div[@class='photogallery']</PageListImageThumbNormalXPath>
+    <QRCodeEncoding>0</QRCodeEncoding>
+    <QRCodeScale>1</QRCodeScale>
+    <QRCodeVersion>0</QRCodeVersion>
+    <QRCodeCorrection>3</QRCodeCorrection>
+    <QRCodeCharacterSet>Default UTF-8</QRCodeCharacterSet>
+    <QRCodeBackColor>White</QRCodeBackColor>
+    <QRCodeForeColor>Black</QRCodeForeColor>
+    <QRCodeImageFormat>Png</QRCodeImageFormat>
+    <MergeDefinitionName>VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</MergeDefinitionName>
+    <MergeDefinitionKeyFields>IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|MergeContext=Column|MergeKind=IsKey|ReaderName|Codice|</MergeDefinitionKeyFields>
+    <MergeDefinitionColExclude>IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|MergeContext=Column|MergeKind=Exclude|Ordinal|</MergeDefinitionColExclude>
+    <MergeDefinitionRowExclude>IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|MergeContext=Row|MergeKind=Exclude|Status=Locked|</MergeDefinitionRowExclude>
+  </WebSite>
+  <WebSiteFeature>
+    <ID>0</ID>
+    <Code>7b86f391-9c9e-4b84-a295-c73fa416ee50</Code>
+    <WebSiteID>0</WebSiteID>
+    <Name>{descrizione}</Name>
+    <XPath>//*[@id='description']/div[1]</XPath>
+    <Caption>Descrizione</Caption>
+    <Version>1.00.00</Version>
+    <ReleaseDate>2017-04-10T22:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>1</ID>
+    <Code>6740a093-9a53-455a-8568-0767139a278d</Code>
+    <WebSiteID>0</WebSiteID>
+    <Name>{descrizione2}</Name>
+    <XPath>//*[@id='description']/div[1]</XPath>
+    <Caption>Descrizione2</Caption>
+    <Version>1.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>2</ID>
+    <Code>f60ec407-7554-47d0-b778-c96b32ac374d</Code>
+    <WebSiteID>0</WebSiteID>
+    <Name>{zona}</Name>
+    <XPath>//div[contains(@class,'maps-address')]/span/strong</XPath>
+    <Caption>Zona</Caption>
+    <Version>1.00.00</Version>
+    <ReleaseDate>2017-04-10T22:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>3</ID>
+    <Code>a06dc38f-cf11-4aeb-be2e-106d09024203</Code>
+    <WebSiteID>0</WebSiteID>
+    <Name>{tipologia}</Name>
+    <XPath>//title</XPath>
+    <Caption>Tipologia</Caption>
+    <Version>1.00.00</Version>
+    <ReleaseDate>2017-04-10T22:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>4</ID>
+    <Code>55c7b33e-dfe0-4f0d-979a-830858810cec</Code>
+    <WebSiteID>0</WebSiteID>
+    <Name>{superficie}</Name>
+    <XPath>//div[@class='left-side']//div[contains(@class,'block_features-anction')]//*[contains(@class,'detail-features')]/ul/li[contains(.,'superficie')]//strong</XPath>
+    <Caption>Mq</Caption>
+    <Version>1.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>5</ID>
+    <Code>5adffc73-89e0-4562-b47d-353ff8b247d0</Code>
+    <WebSiteID>0</WebSiteID>
+    <Name>{locali}</Name>
+    <XPath>//div[@class='left-side']//div[contains(@class,'block_features-anction')]//*[contains(@class,'detail-features')]/ul/li[contains(.,'locale') or contains(.,'locali')]//strong</XPath>
+    <Caption>Locali</Caption>
+    <Version>1.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>6</ID>
+    <Code>27a21a5c-ffeb-4ab2-b331-c9779f5c5e9a</Code>
+    <WebSiteID>0</WebSiteID>
+    <Name>{classe_energetica}</Name>
+    <XPath>//*[@class='indicator-energy']</XPath>
+    <Caption>ClasseEnergetica</Caption>
+    <Version>1.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>7</ID>
+    <Code>a89c2b93-0e97-4698-8463-2c8caeffe16f</Code>
+    <WebSiteID>0</WebSiteID>
+    <Name>{prezzo}</Name>
+    <XPath>//div[@class='left-side']//ul/li[contains(@class, 'features__price') and contains(.,'€') and not(contains(.,'rata'))]</XPath>
+    <Caption>Prezzo</Caption>
+    <Version>1.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>8</ID>
+    <Code>5e708caf-053f-470f-9fd5-e62134d3f5aa</Code>
+    <WebSiteID>0</WebSiteID>
+    <Name>{contratto}</Name>
+    <XPath>//title</XPath>
+    <Caption>Proposta</Caption>
+    <Version>1.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>9</ID>
+    <Code>79f1163f-1bcf-4f2c-91fc-78903d8299f4</Code>
+    <WebSiteID>0</WebSiteID>
+    <Name>{riferimento_e_data_annuncio}</Name>
+    <XPath>//*[@id="sticky-contact-bottom"]//dt[contains(.,'Riferimento e Data annuncio')]/following-sibling::dd[1]</XPath>
+    <Caption>Riferimento</Caption>
+    <Version>1.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>10</ID>
+    <Code>da45b1c6-40c4-4c8e-97f3-5d0c51e86177</Code>
+    <WebSiteID>0</WebSiteID>
+    <Name>{codice_annuncio}</Name>
+    <XPath>//*[@id="sticky-contact-bottom"]//dt[contains(.,'Riferimento e Data annuncio')]/following-sibling::dd[1]</XPath>
+    <Caption>Riferimento</Caption>
+    <Version>1.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>11</ID>
+    <Code>3550d6dc-d487-4173-b7b2-4af5516d107d</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{zona}</Name>
+    <XPath>//*[@class='address']/div/h1</XPath>
+    <Caption>Località</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>12</ID>
+    <Code>32d959db-6b21-42e8-aa5b-1269b3bdb448</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{address}</Name>
+    <XPath>//*[@class='address']/div/h1</XPath>
+    <Caption>Indirizzo</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>13</ID>
+    <Code>ad98037c-c68a-48bc-abe3-699957323a6f</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{tipologia}</Name>
+    <XPath>//*[@class='address']/div/h1</XPath>
+    <Caption>Proposta</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>14</ID>
+    <Code>150ffcca-3721-4f90-985d-1f1152292b06</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{metri_quadri_n}</Name>
+    <XPath>//*[@id='app']/div/div/div[2]/section[1]/div/div[2]/ul[1]/li[2]/p[1]/span/text()</XPath>
+    <Caption>Mq</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-10T22:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>15</ID>
+    <Code>442aef40-173b-4bad-a1b2-a3619001f9d2</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{locali_n}</Name>
+    <XPath>//*[@id='app']/div/div/div[2]/section[2]/div/div[3]/div[1]/div/ul/li[1]/text()</XPath>
+    <Caption>Locali</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>16</ID>
+    <Code>5542621e-38bb-477e-9bc4-4dd88ddddc40</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{descrizione_titolo}</Name>
+    <XPath>//*[@class='description']/div/span</XPath>
+    <Caption>Titolo</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>17</ID>
+    <Code>1a7e7138-c013-4f8f-b71b-402fd4f53b04</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{descrizione_testo}</Name>
+    <XPath>//*[@class='description']/p</XPath>
+    <Caption>Descrizione</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>18</ID>
+    <Code>c19ec5cd-28fb-4dc1-ba30-3197d9035258</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{classe_energetica}</Name>
+    <XPath>//*[@class='energy']/span[1]</XPath>
+    <Caption>ClasseEnergetica</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>19</ID>
+    <Code>da0d95fd-77d6-479f-a69c-9ca8abdc5e66</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{prezzo}</Name>
+    <XPath>//*[@id='app']/div/div/div[2]/section[1]/div/div[2]/ul[1]/li[1]/text()</XPath>
+    <Caption>Prezzo</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>20</ID>
+    <Code>b04664fb-bb11-4ee9-9592-290a4b03c992</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{proposta}</Name>
+    <XPath>//title</XPath>
+    <Caption>Contratto</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-10T00:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>21</ID>
+    <Code>b5f0f5fa-0639-42f1-bf2d-0093846dde77</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{riferimento}</Name>
+    <XPath>//*[@id='agency-contact']/*[@class='contact-agency']/*[@class='agency-info']/*[@class='call-now']/*[@class='code-rif']/ul/li[2]/b</XPath>
+    <Caption>Rif. Agenzia</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-14T22:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+  <WebSiteFeature>
+    <ID>22</ID>
+    <Code>699bbd79-9b74-4ba4-b603-cdb22e000179</Code>
+    <WebSiteID>1</WebSiteID>
+    <Name>{codice_annuncio}</Name>
+    <XPath>//*[@id='agency-contact']/*[@class='contact-agency']/*[@class='agency-info']/*[@class='call-now']/*[@class='code-rif']/ul/li[1]/b</XPath>
+    <Caption>Codice</Caption>
+    <Version>2.00.00.00</Version>
+    <ReleaseDate>2017-04-14T22:00:00Z</ReleaseDate>
+  </WebSiteFeature>
+</VdOLicenseProvider>

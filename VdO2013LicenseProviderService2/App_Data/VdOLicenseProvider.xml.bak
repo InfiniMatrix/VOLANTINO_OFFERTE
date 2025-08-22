@@ -1,0 +1,497 @@
+<?xml version="1.0" standalone="yes"?>
+<VdOLicenseProvider>
+  <xs:schema id="VdOLicenseProvider" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="VdOLicenseProvider" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Users">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="Login" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Password" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Context" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ActiveFrom" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="ActiveUntil" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Notes" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ProductSuites">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="Version" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Build" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="15" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Description" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ReleaseDate" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ExpireDate" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Products">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="ProductSuiteID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="ProductSuites!ID" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Version" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="25" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Build" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="15" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Description" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ReleaseDate" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="ExpireDate" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Customers">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="UserID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Users!ID" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Description" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="TaxIdentifier" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ActiveFrom" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="ActiveUntil" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Address" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Town" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ZipCode" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="10" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Email" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Phone" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Fax" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="WebSite" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1024" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Notes" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CustomerProducts">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="CustomerID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Customers!ID" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="ProductSuiteID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="ProductSuites!ID" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="ProductID" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="Products!ID" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="ActiveFrom" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="ActiveUntil" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Notes" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="CustomerProductActivations">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" msdata:AutoIncrement="true" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:long" />
+                <xs:element name="Code" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="TimeStamp" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="CustomerCode" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="Customers!Code" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="ProductSuiteCode" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="ProductSuites!Code" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="ProductCode" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="Guid" msprop:ForeingKeyReference="Products!Code" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="ActivationKey" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="MachineCPU" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="MachineBIOS" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="MachineBASE" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="MachineDISK" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" minOccurs="0" />
+                <xs:element name="MachineVIDEO" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" minOccurs="0" />
+                <xs:element name="MachineMAC" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:string" />
+                <xs:element name="ActiveFrom" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" />
+                <xs:element name="ActiveUntil" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msdata:DateTimeMode="Utc" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Notes" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:DefaultValueKind="None" msprop:ForeingKeyReference="" msprop:PrimaryKeyIndex="-1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4096" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1">
+        <xs:selector xpath=".//Users" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Constraint2">
+        <xs:selector xpath=".//Users" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="ProductSuites_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//ProductSuites" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="ProductSuites_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//ProductSuites" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="Products_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//Products" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Products_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//Products" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="Customers_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//Customers" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="Customers_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//Customers" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="CustomerProducts_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//CustomerProducts" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="CustomerProducts_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//CustomerProducts" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="CustomerProductActivations_Constraint1" msdata:ConstraintName="Constraint1">
+        <xs:selector xpath=".//CustomerProductActivations" />
+        <xs:field xpath="ID" />
+      </xs:unique>
+      <xs:unique name="CustomerProductActivations_Constraint2" msdata:ConstraintName="Constraint2">
+        <xs:selector xpath=".//CustomerProductActivations" />
+        <xs:field xpath="Code" />
+      </xs:unique>
+      <xs:unique name="Constraint3">
+        <xs:selector xpath=".//CustomerProductActivations" />
+        <xs:field xpath="CustomerCode" />
+      </xs:unique>
+      <xs:unique name="Constraint4">
+        <xs:selector xpath=".//CustomerProductActivations" />
+        <xs:field xpath="ProductSuiteCode" />
+      </xs:unique>
+      <xs:unique name="Constraint5">
+        <xs:selector xpath=".//CustomerProductActivations" />
+        <xs:field xpath="ProductCode" />
+      </xs:unique>
+      <xs:keyref name="FKCustomerProductActivations_x0040_CustomerCode_RefersTo_Customers_x0040_Code" refer="Customers_Constraint2">
+        <xs:selector xpath=".//CustomerProductActivations" />
+        <xs:field xpath="CustomerCode" />
+      </xs:keyref>
+      <xs:keyref name="FKCustomerProductActivations_x0040_ProductSuiteCode_RefersTo_ProductSuites_x0040_Code" refer="ProductSuites_Constraint2">
+        <xs:selector xpath=".//CustomerProductActivations" />
+        <xs:field xpath="ProductSuiteCode" />
+      </xs:keyref>
+      <xs:keyref name="FKCustomerProductActivations_x0040_ProductCode_RefersTo_Products_x0040_Code" refer="Products_Constraint2">
+        <xs:selector xpath=".//CustomerProductActivations" />
+        <xs:field xpath="ProductCode" />
+      </xs:keyref>
+      <xs:keyref name="FKCustomerProducts_x0040_CustomerID_RefersTo_Customers_x0040_ID" refer="Customers_Constraint1">
+        <xs:selector xpath=".//CustomerProducts" />
+        <xs:field xpath="CustomerID" />
+      </xs:keyref>
+      <xs:keyref name="FKCustomerProducts_x0040_ProductSuiteID_RefersTo_ProductSuites_x0040_ID" refer="ProductSuites_Constraint1">
+        <xs:selector xpath=".//CustomerProducts" />
+        <xs:field xpath="ProductSuiteID" />
+      </xs:keyref>
+      <xs:keyref name="FKCustomerProducts_x0040_ProductID_RefersTo_Products_x0040_ID" refer="Products_Constraint1">
+        <xs:selector xpath=".//CustomerProducts" />
+        <xs:field xpath="ProductID" />
+      </xs:keyref>
+      <xs:keyref name="FKCustomers_x0040_UserID_RefersTo_Users_x0040_ID" refer="Constraint1">
+        <xs:selector xpath=".//Customers" />
+        <xs:field xpath="UserID" />
+      </xs:keyref>
+      <xs:keyref name="FKProducts_x0040_ProductSuiteID_RefersTo_ProductSuites_x0040_ID" refer="ProductSuites_Constraint1">
+        <xs:selector xpath=".//Products" />
+        <xs:field xpath="ProductSuiteID" />
+      </xs:keyref>
+    </xs:element>
+  </xs:schema>
+  <Users>
+    <ID>0</ID>
+    <Code>d9a4c79e-bd88-4853-a432-e7d039941ec1</Code>
+    <Login>admin</Login>
+    <Password>admin</Password>
+    <Context>admins</Context>
+    <ActiveFrom>2013-10-04T22:00:00Z</ActiveFrom>
+  </Users>
+  <Users>
+    <ID>1</ID>
+    <Code>a4753395-3510-4bbb-96c7-fc2dbdca7531</Code>
+    <Login>guest</Login>
+    <Password>guest</Password>
+    <Context>guests</Context>
+    <ActiveFrom>2013-10-04T22:00:00Z</ActiveFrom>
+  </Users>
+  <ProductSuites>
+    <ID>0</ID>
+    <Code>c3a27c74-5137-4f06-a088-cf6adff46a75</Code>
+    <Version>1.00.00</Version>
+    <Build />
+    <Description>Vetrina delle Offerte</Description>
+    <ReleaseDate>2013-10-04T22:00:00Z</ReleaseDate>
+  </ProductSuites>
+  <ProductSuites>
+    <ID>1</ID>
+    <Code>d5a663e2-7d9c-4323-9f68-808d4387927b</Code>
+    <Version>1.00.00</Version>
+    <Build />
+    <Description>Volantino delle Offerte</Description>
+    <ReleaseDate>2013-10-04T22:00:00Z</ReleaseDate>
+  </ProductSuites>
+  <ProductSuites>
+    <ID>2</ID>
+    <Code>fd4acca8-3e25-423a-be55-c3cead67adbc</Code>
+    <Version>1.00.00</Version>
+    <Build />
+    <Description>Web delle Offerte</Description>
+    <ReleaseDate>2013-10-04T22:00:00Z</ReleaseDate>
+  </ProductSuites>
+  <Products>
+    <ID>0</ID>
+    <Code>e33025e0-da90-4bf3-8504-608b2cc108d1</Code>
+    <ProductSuiteID>0</ProductSuiteID>
+    <Version>1.00.00</Version>
+    <Build />
+    <Description>Vetrina delle Offerte(Applicazione)</Description>
+    <ReleaseDate>2013-10-04T22:00:00Z</ReleaseDate>
+  </Products>
+  <Products>
+    <ID>1</ID>
+    <Code>0416cb33-73ea-4450-b6d1-99c5a6514a7a</Code>
+    <ProductSuiteID>1</ProductSuiteID>
+    <Version>1.00.00</Version>
+    <Build />
+    <Description>Volantino delle Offerte(Applicazione)</Description>
+    <ReleaseDate>2013-10-04T22:00:00Z</ReleaseDate>
+  </Products>
+  <Products>
+    <ID>2</ID>
+    <Code>6812c412-e150-41ec-ac5d-5caeb9a00da3</Code>
+    <ProductSuiteID>2</ProductSuiteID>
+    <Version>1.00.00</Version>
+    <Build />
+    <Description>Web delle Offerte(Applicazione)</Description>
+    <ReleaseDate>2013-10-04T22:00:00Z</ReleaseDate>
+  </Products>
+  <Customers>
+    <ID>0</ID>
+    <Code>339b7add-9303-4f68-a893-41abd6e634d1</Code>
+    <UserID>0</UserID>
+    <Description>admin</Description>
+    <TaxIdentifier>admin***************</TaxIdentifier>
+    <ActiveFrom>2013-10-05T00:00:00Z</ActiveFrom>
+    <ActiveUntil>0001-01-01T00:00:00Z</ActiveUntil>
+    <Address />
+    <Town />
+    <ZipCode />
+    <Email />
+    <Phone />
+    <Fax />
+    <WebSite />
+    <Notes />
+  </Customers>
+  <Customers>
+    <ID>1</ID>
+    <Code>bee3c96e-3777-4c6e-8c96-3d3ca453fe27</Code>
+    <UserID>1</UserID>
+    <Description>guest</Description>
+    <TaxIdentifier>guest***************</TaxIdentifier>
+    <ActiveFrom>2013-10-05T00:00:00Z</ActiveFrom>
+    <ActiveUntil>0001-01-01T00:00:00Z</ActiveUntil>
+    <Address />
+    <Town />
+    <ZipCode />
+    <Email />
+    <Phone />
+    <Fax />
+    <WebSite />
+    <Notes />
+  </Customers>
+  <Customers>
+    <ID>2</ID>
+    <Code>b84ff416-14b9-4a98-a729-e393d5f46d1e</Code>
+    <UserID>0</UserID>
+    <Description>Cliente di prova</Description>
+    <TaxIdentifier>01234567890</TaxIdentifier>
+    <ActiveFrom>2013-10-04T22:00:00Z</ActiveFrom>
+    <Address>Via le mani dal naso</Address>
+    <Town>Roma</Town>
+    <ZipCode>00100</ZipCode>
+    <Email>prova@prova.com</Email>
+    <Phone>06 1234567</Phone>
+    <Fax>06 1234568</Fax>
+    <WebSite>www.prova.com</WebSite>
+  </Customers>
+  <CustomerProducts>
+    <ID>0</ID>
+    <Code>4ba43e22-3e30-49ed-9407-50677887cc7e</Code>
+    <CustomerID>0</CustomerID>
+    <ProductSuiteID>0</ProductSuiteID>
+    <ProductID>0</ProductID>
+    <ActiveFrom>2013-10-05T00:00:00Z</ActiveFrom>
+  </CustomerProducts>
+  <CustomerProducts>
+    <ID>1</ID>
+    <Code>d4e8d233-218e-4942-a70c-debb3033bfe2</Code>
+    <CustomerID>0</CustomerID>
+    <ProductSuiteID>1</ProductSuiteID>
+    <ProductID>1</ProductID>
+    <ActiveFrom>2013-10-05T00:00:00Z</ActiveFrom>
+  </CustomerProducts>
+  <CustomerProducts>
+    <ID>2</ID>
+    <Code>57e31961-11ae-463c-bb78-9fa1d3f7ed41</Code>
+    <CustomerID>0</CustomerID>
+    <ProductSuiteID>2</ProductSuiteID>
+    <ProductID>2</ProductID>
+    <ActiveFrom>2013-10-05T00:00:00Z</ActiveFrom>
+  </CustomerProducts>
+  <CustomerProducts>
+    <ID>3</ID>
+    <Code>15f2284a-39c7-4753-a77f-6a6125a57cea</Code>
+    <CustomerID>1</CustomerID>
+    <ProductSuiteID>0</ProductSuiteID>
+    <ProductID>0</ProductID>
+    <ActiveFrom>2013-10-05T00:00:00Z</ActiveFrom>
+  </CustomerProducts>
+  <CustomerProducts>
+    <ID>4</ID>
+    <Code>0796bff2-f758-42cf-ab81-1e60ee15bed1</Code>
+    <CustomerID>1</CustomerID>
+    <ProductSuiteID>1</ProductSuiteID>
+    <ProductID>1</ProductID>
+    <ActiveFrom>2013-10-05T00:00:00Z</ActiveFrom>
+  </CustomerProducts>
+  <CustomerProducts>
+    <ID>5</ID>
+    <Code>b824dc18-eea7-4568-ae6e-42ab8d83e4ae</Code>
+    <CustomerID>1</CustomerID>
+    <ProductSuiteID>2</ProductSuiteID>
+    <ProductID>2</ProductID>
+    <ActiveFrom>2013-10-05T00:00:00Z</ActiveFrom>
+  </CustomerProducts>
+</VdOLicenseProvider>
