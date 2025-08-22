@@ -1,0 +1,11 @@
+C:\VdO_Progetto\VdO2013MainCore\obj\Debug\VdO2013MainCore.csprojAssemblyReference.cache
+C:\VdO_Progetto\VdO2013MainCore\obj\Debug\VdO2013MainCore.DataGridControl.resources
+C:\VdO_Progetto\VdO2013MainCore\obj\Debug\VdO2013MainCore.Controls.FontEditor.resources
+C:\VdO_Progetto\VdO2013MainCore\obj\Debug\VdO2013MainCore.LayoutSupportedControl.resources
+C:\VdO_Progetto\VdO2013MainCore\obj\Debug\VdO2013MainCore.PropertyGridControl.resources
+C:\VdO_Progetto\VdO2013MainCore\obj\Debug\VdO2013MainCore.Controls.Ribbon.ApplicationBackstageBase.resources
+C:\VdO_Progetto\VdO2013MainCore\obj\Debug\VdO2013MainCore.SiteReaderLinkedInfoControl.resources
+C:\VdO_Progetto\VdO2013MainCore\obj\Debug\VdO2013MainCore.Controls.DataVGridControl.resources
+C:\VdO_Progetto\VdO2013MainCore\obj\Debug\VdO2013MainCore.Design.SiteReaderDesigner.resources
+C:\VdO_Progetto\VdO2013MainCore\obj\Debug\VdO2013MainCore.Properties.Resources.resources
+C:\VdO_Progetto\VdO2013MainCore\obj\Debug\VdO2013MainCore.csproj.GenerateResource.cache
