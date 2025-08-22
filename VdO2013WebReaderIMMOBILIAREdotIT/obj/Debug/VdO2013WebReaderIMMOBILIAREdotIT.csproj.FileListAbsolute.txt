@@ -1,0 +1,3 @@
+C:\VdO_Progetto\VdO2013WebReaderIMMOBILIAREdotIT\obj\Debug\VdO2013WebReaderIMMOBILIAREdotIT.csprojAssemblyReference.cache
+C:\VdO_Progetto\VdO2013WebReaderIMMOBILIAREdotIT\obj\Debug\VdO2013WebReaderIMMOBILIAREdotIT.Properties.Resources.resources
+C:\VdO_Progetto\VdO2013WebReaderIMMOBILIAREdotIT\obj\Debug\VdO2013WebReaderIMMOBILIAREdotIT.csproj.GenerateResource.cache

@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+        <section name="featuresSection" type="VdO2013Core.Config.FeaturesSection, VdO2013Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null" />
+    </configSections>
+    <appSettings>
+        <add key="NormalSiteUrl" value="http://www.immobiliare.it{{String}}" />
+        <add key="MobileSiteUrl" value="http://m.immobiliare.it{{String}}" />
+        <add key="Agenzia" value="Faro_Roma{{String}}" />
+        <add key="RagioneSociale" value="FARO IMMOBILIARE srl{{String}}" />
+        <add key="Tipologia" value="Tutte{{String}}" />
+        <add key="Elementi" value="1{{Int32}}" />
+        <add key="Pagine" value="2{{Int32}}" />
+        <add key="ImageFormat" value="Jpeg{{String}}" />
+        <add key="ReportPath" value="C:\Users\Public\Documents\LogicNet\Volantino delle Offerte\Mancio\Report{{String}}" />
+        <add key="ImagesPath" value="C:\Users\Paolo\Documents\LogicNet\Volantino delle Offerte\Mancio\Images{{String}}" />
+        <add key="DataPath" value="C:\Development\Projects\Volantino delle Offerte\Volantino delle Offerte\bin\Debug\Mancio\Data{{String}}" />
+        <add key="PageListUrl" value="/agenzie_immobiliari/{codice agenzia}.html?pag={indice lista}{{String}}" />
+        <add key="PageListUrlRedirects" value="/terreni{{String}}" />
+        <add key="PageListMaxCount" value="20{{Int32}}" />
+        <add key="PageListPageNumber" value="//*[@id=&quot;pageCount&quot;]/strong[1]{{String}}" />
+        <add key="PageListPageCount" value="//*[@id=&quot;pageCount&quot;]/strong[2]{{String}}" />
+        <add key="PageListItemCountXPath" value="//*[@id='pageCount']{{String}}" />
+        <add key="PageListRagioneSocialeXPath" value="//*[@id='dati']/h1{{String}}" />
+        <add key="PageListListXPath" value="//*[@id='risultati']/div//*[@class='wrapper_riga_annuncio']//*[@class='annuncio_title']//a{{String}}" />
+        <add key="PageListFeaturesEnabled" value="True{{Boolean}}" />
+        <add key="PageListFeaturesXPath" value="//*[@id='sticky-contact-bottom']//*[@class='row section-data']/dl{{String}}" />
+        <add key="PageListMaxImageCount" value="3{{Int32}}" />
+        <add key="PageListImageXPath" value="//*[@id='foto']//*[@class='labs-gallery__slide']/img{{String}}" />
+        <add key="PageListImageThumbListXPath" value="//*[@id='foto']//*[@class='labs-gallery__slide']/img{{String}}" />
+        <add key="PageListVideoEnabled" value="True{{Boolean}}" />
+        <add key="PageListMaxVideoCount" value="3{{Int32}}" />
+        <add key="PageListVideoXPath" value="//*[@class='video-container']//video/source | //*[@class='video-player']//video | //*[contains(@class,'video')]//iframe{{String}}" />
+        <add key="QRCodeEncoding" value="0{{Int32}}" />
+        <add key="QRCodeScale" value="1{{Int16}}" />
+        <add key="QRCodeVersion" value="0{{Int32}}" />
+        <add key="QRCodeCorrection" value="3{{Int32}}" />
+        <add key="QRCodeCharacterSet" value="Default UTF-8{{String}}" />
+        <add key="QRCodeBackColor" value="White{{String}}" />
+        <add key="QRCodeForeColor" value="Black{{String}}" />
+        <add key="QRCodeImageFormat" value="Png{{String}}" />
+        <add key="MergeDefinitionName" value="VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null{{String}}" />
+        <add key="MergeDefinitionKeyFields" value="IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|MergeContext=Column|MergeKind=IsKey|ReaderName|Codice|{{String}}" />
+        <add key="MergeDefinitionColExclude" value="IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|MergeContext=Column|MergeKind=Exclude|Ordinal|{{String}}" />
+        <add key="MergeDefinitionRowExclude" value="IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|MergeContext=Row|MergeKind=Exclude|Status=Locked|{{String}}" />
+        <add key="Version" value="1.0.0.0{{String}}" />
+        <add key="TimeStamp" value="-8587258322845071826{{Int64}}" />
+    </appSettings>
+    <featuresSection>
+        <features>
+            <clear />
+            <add name="{descrizione}" xPath="//*[@id='description']/div[2]/div"
+                mapping="descrizione" typeName="System.String" maxSize="4096"
+                minSize="0" nullable="true">
+                <controlAppearance visible="Unchanged" enabled="Unchanged" readonly="Unchanged"
+                    dockStyle="None" borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                </columnAppearance>
+                <actions trimLeft="true" trimRight="true" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{descrizione2}" xPath="//*[@id='description']/div[2]/div"
+                mapping="descrizione2" typeName="System.String" maxSize="4096"
+                minSize="0" nullable="true">
+                <controlAppearance visible="Unchanged" enabled="Unchanged" readonly="Unchanged"
+                    dockStyle="None" borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                </columnAppearance>
+                <actions trimLeft="true" trimRight="true" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{zona}" xPath="//*[@class='maps-address']" mapping="zona"
+                typeName="System.String" maxSize="255" minSize="0" nullable="true">
+                <controlAppearance visible="Unchanged" enabled="Unchanged" readonly="Unchanged"
+                    dockStyle="None" borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                </columnAppearance>
+                <actions trimLeft="true" trimRight="true" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="&#xA;" newText=" " />
+                        <add text="&#xD;" newText=" " />
+                        <add text="Zona:" newText="" />
+                        <add text="null" newText="" />
+                        <add text="  " newText=" " />
+                        <add text="Indirizzo" newText="" />
+                        <add text="Quartiere" newText="" />
+                        <add text=", Roma " newText="," />
+                        <add text="           " newText=" - " />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{tipologia}" xPath="" mapping="tipologia" typeName="System.String"
+                maxSize="255" minSize="0" nullable="true">
+                <controlAppearance visible="Unchanged" enabled="Unchanged" readonly="Unchanged"
+                    dockStyle="None" borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text=":" newText="" />
+                        <add text=" / " newText="/" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{superficie}" xPath="//*[@id='sticky-contact-bottom']/div[1]/div[2]/div[1]/ul/li[1]"
+                mapping="nMq" typeName="System.Int32" maxSize="-1" minSize="0"
+                nullable="true">
+                <controlAppearance visible="Unchanged" enabled="Unchanged" readonly="Unchanged"
+                    dockStyle="None" borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="m2" newText="" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{locali}" xPath="//*[@id='sticky-contact-bottom']/div[1]/div[2]/div[1]/ul/li[contains(.,'locale') or contains(.,'locali')]"
+                mapping="nLocali" typeName="System.Int32" maxSize="-1" minSize="0"
+                nullable="true">
+                <controlAppearance visible="Unchanged" enabled="Unchanged" readonly="Unchanged"
+                    dockStyle="None" borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="locali" newText="" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{classe_energetica}" xPath="//*[@class='indicator-energy']"
+                mapping="classe_energetica" typeName="System.String" maxSize="2048"
+                minSize="0" nullable="true">
+                <controlAppearance visible="Unchanged" enabled="Unchanged" readonly="Unchanged"
+                    dockStyle="None" borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                </columnAppearance>
+                <actions trimLeft="true" trimRight="true" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="| Classe energetica G" newText="" />
+                        <add text="Indice prestazione energetica:" newText="" />
+                        <add text="anno" newText="" />
+                        <add text="Classe energetica immobile" newText="" />
+                        <add text="&amp;lt;!-- popolare value class con noTabEnergetic in ogni caso di assenza classe energetica esplicita --&amp;gt;"
+                            newText="" />
+                        <add text="&amp;lt;!-- popolare con messaggio in base a casisitica - solo in caso di assenza classe energetica (A+, A, B, etc. ) --&amp;gt;"
+                            newText="" />
+                        <add text="INDICE PRESTAZIONE ENERGETICA (IPE): Non indicato|La classe energetica del presente immobile non è stata indicata"
+                            newText="" />
+                        <add text="&#xA;" newText=" " />
+                        <add text="&#xD;" newText=" " />
+                        <add text="≥ 175 kWh/m²" newText="G" />
+                        <add text="≥ 65 kWh/m³" newText="G" />
+                        <add text="89,00 kWh/m²" newText="E" />
+                        <add text="71,47 kWh/m²" newText="F" />
+                        <add text="EP globale non rinnovabile: 						 						≥ 3,51 kWh/m³   									 											 												 						EP globale rinnovabile: 						≥ 3,51 kWh/m²  					 														 									 						EP invernale del fabbricato: 						Alta  						 					 														 									 						EP estiva del fabbricato: 						Alta"
+                            newText="G" />
+                        <add text="EP globale non rinnovabile: 						 						≥ 3,51 kWh/m²   									 											 												 						EP globale rinnovabile: 						≥ 3,51 kWh/m³  					 														 									 						EP invernale del fabbricato: 						Alta  						 					 														 									 						EP estiva del fabbricato: 						Alta"
+                            newText="G" />
+                        <add text="	" newText=" " />
+                        <add text="  " newText=" " />
+                        <add text="null" newText="" />
+                        <add text="175,00 kWh/m²" newText="G" caseSensitive="false" repeatCount="0" />
+                        <add text="EP globale non rinnovabile:       ≥ 3,51 kWh/m²                      EP globale rinnovabile:    ≥ 3,51 kWh/m³                    EP invernale del fabbricato:    Alta                        EP estiva del fabbricato:    Alta"
+                            newText="G" caseSensitive="false" repeatCount="0" />
+                        <add text="EP globale non rinnovabile:        172,70 kWh/m²"
+                            newText="G" caseSensitive="false" repeatCount="0" />
+                        <add text="EP globale non rinnovabile:&#xA;    &#xA;    " newText=""
+                            caseSensitive="false" repeatCount="0" />
+                        <add text="                           EP globale rinnovabile:    0,00 kWh/m²                       EP invernale del fabbricato:    Bassa                            EP estiva del fabbricato:    Bassa"
+                            newText="" caseSensitive="false" repeatCount="0" />
+                        <add text="EP globale non rinnovabile:        " newText="" caseSensitive="false"
+                            repeatCount="0" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{prezzo}" xPath="//*[@id='sticky-contact-bottom']/div[1]/div[2]/div[1]/ul/li[contains(.,'€') and not(contains(.,'rata'))]"
+                mapping="prezzo" typeName="System.Double" maxSize="-1" minSize="0"
+                nullable="true">
+                <controlAppearance visible="Unchanged" enabled="Unchanged" readonly="Unchanged"
+                    dockStyle="None" borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="&amp;amp;euro; " newText="" />
+                        <add text="&amp;euro; " newText="" />
+                        <add text="." newText="" />
+                        <add text=" " newText="" />
+                        <add text="€" newText="" />
+                        <add text="almese" newText="" />
+                        <add text="null" newText="0" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{contratto}" xPath="" mapping="proposta" typeName="System.String"
+                maxSize="255" minSize="0" nullable="true">
+                <controlAppearance visible="Unchanged" enabled="Unchanged" readonly="Unchanged"
+                    dockStyle="None" borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="Vendita" newText="VENDITA" />
+                        <add text="Affitto" newText="AFFITTO" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{riferimento_e_data_annuncio}" xPath="" mapping="riferimento"
+                typeName="System.String" maxSize="255" minSize="0" nullable="true">
+                <controlAppearance visible="Unchanged" enabled="Unchanged" readonly="Unchanged"
+                    dockStyle="None" borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{codice_annuncio}" xPath="" mapping="riferimento"
+                typeName="System.String" maxSize="255" minSize="0" nullable="true">
+                <controlAppearance visible="Unchanged" enabled="Unchanged" readonly="Unchanged"
+                    dockStyle="None" borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+        </features>
+    </featuresSection>
+</configuration>

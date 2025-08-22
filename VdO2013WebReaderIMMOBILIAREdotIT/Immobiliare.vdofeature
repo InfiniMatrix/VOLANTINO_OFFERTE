@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <configSections>
+        <section name="featuresSection" type="VdO2013Core.Config.FeaturesSection, VdO2013Core, Version=1.0.0.2, Culture=neutral, PublicKeyToken=acafc287d91522dd" />
+    </configSections>
+    <featuresSection>
+        <features>
+            <clear />
+            <add name="{descrizione}" xPath="//*[@id='description']/div//text()"
+                mapping="Descrizione" typeName="System.String" maxSize="4096"
+                minSize="0" nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text=" ACE" newText=" APE" />
+                        <add text="classe energetica G" newText="" />
+                        <add text=" - " newText="" />
+                        <add text="&#xA;" newText=" " />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                        <add start=" - " startIsSearchFor="true" end="\e" endIsSearchFor="true"
+                            fromLeft="true" />
+                        <add start="appartamento" startIsSearchFor="true" end="\e" endIsSearchFor="true"
+                            fromLeft="true" />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{zona}" xPath="//div[contains(@class,'maps-address')]/span/strong"
+                mapping="Zona" typeName="System.String" maxSize="255" minSize="0"
+                nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="Quartiere" newText="" />
+                        <add text="Indirizzo" newText="" />
+                        <add text="," newText="" />
+                        <add text="                                            " newText=" " />
+                        <add text="&#xA;" newText="" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                        <add start="0" startIsSearchFor="false" end=" - " endIsSearchFor="true"
+                            fromLeft="false" />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{Indirizzo}" xPath="//*[@class='maps-address']" mapping="Indirizzo"
+                typeName="System.String" maxSize="255" minSize="0" nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="true" trimRight="true" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="Indirizzo" newText="" />
+                        <add text="Comune" newText="" />
+                        <add text="&#xA;" newText=" " />
+                        <add text="     " newText=" " repeatCount="5" hasFailed="48" />
+                        <add text="    " newText=" " repeatCount="5" hasFailed="48" />
+                        <add text="   " newText=" " repeatCount="5" hasFailed="48" />
+                        <add text="  " newText=" " repeatCount="5" hasFailed="48" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                        <add start="Indirizzo" startIsSearchFor="true" end="," endIsSearchFor="true"
+                            fromLeft="true" />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{tipologia}" xPath="//title" mapping="Tipologia" typeName="System.String"
+                maxSize="255" minSize="0" nullable="true" applyReplacementsBefore="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text=":" newText="" />
+                        <add text=" / " newText="/" />
+                        <add text="Immobile - " newText="" caseSensitive="false" />
+                        <add text="Vendita " newText="" caseSensitive="false" />
+                        <add text="Affitto " newText="" caseSensitive="false" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                        <add start="0" startIsSearchFor="false" end=" " endIsSearchFor="true"
+                            fromLeft="true" />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{superficie}" xPath="//div[@class='left-side']//div[contains(@class,'block_features-anction')]//*[contains(@class,'detail-features')]/ul/li[contains(.,'superficie')]//strong"
+                mapping="Mq" typeName="System.Int32" maxSize="-1" minSize="0"
+                nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="m²" newText="" caseSensitive="false" repeatCount="0" />
+                        <add text="null" newText="0" caseSensitive="false" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{locali}" xPath="//div[@class='left-side']//div[contains(@class,'block_features-anction')]//*[contains(@class,'detail-features')]/ul/li[contains(.,'locale') or contains(.,'locali')]//strong"
+                mapping="Locali" typeName="System.Int32" maxSize="-1" minSize="0"
+                nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="null" newText="0" caseSensitive="false" />
+                        <add text="5+" newText="6" caseSensitive="false" />
+                        <add text="locali" newText="" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{bagni}" xPath="//*[@id='sticky-contact-bottom']/div[1]/div[2]/div[1]/ul/li"
+                mapping="nBagni" typeName="System.Int32" maxSize="-1" minSize="0"
+                nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Unchanged"
+                    enabled="Unchanged" readonly="Unchanged" dockStyle="None"
+                    borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="null" newText="0" caseSensitive="false" />
+                        <add text="più di 3" newText="4" />
+                        <add text="bagni" newText="" />
+                        <add text="bagno" newText="" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{Titolo}" xPath="//*[@id='description']/div[1]" mapping="Titolo"
+                typeName="System.String" maxSize="4096" minSize="0" nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Unchanged"
+                    enabled="Unchanged" readonly="Unchanged" dockStyle="None"
+                    borderStyle="FixedSingle" customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Unchanged" enabled="Unchanged"
+                    readonly="Unchanged" customized="False">
+                    <header customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="0" bold="Unchanged" italic="Unchanged" underline="Unchanged"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="true" trimRight="true" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="&#xA;" newText=" " />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{classe_energetica}" xPath="//*[@class='indicator-energy']"
+                mapping="ClasseEnergetica" typeName="System.String" maxSize="2048"
+                minSize="0" nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="&#xA;" newText="" caseSensitive="false" />
+                        <add text="!" newText="" caseSensitive="false" />
+                        <add text="-" newText="" caseSensitive="false" />
+                        <add text="&lt;" newText="" caseSensitive="false" />
+                        <add text="&gt;" newText="" caseSensitive="false" />
+                        <add text="|" newText="" caseSensitive="false" />
+                        <add text="&amp;" newText="" caseSensitive="false" />
+                        <add text="  " newText=" " caseSensitive="false" repeatCount="4" />
+                        <add text="&amp;lt;!-- popolare value class con noTabEnergetic in ogni caso di assenza classe energetica esplicita --&amp;gt;"
+                            newText="" />
+                        <add text="&amp;lt;!-- popolare con messaggio in base a casisitica - solo in caso di assenza classe energetica (A+, A, B, etc. ) --&amp;gt;"
+                            newText="" />
+                        <add text="INDICE PRESTAZIONE ENERGETICA (IPE): Non indicato|La classe energetica del presente immobile non è stata indicata"
+                            newText="" />
+                        <add text="Classe energetica" newText="" />
+                        <add text="null" newText="NC" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                        <add start="Classe energetica" startIsSearchFor="true" end="\e"
+                            endIsSearchFor="true" fromLeft="true" />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{prezzo}" xPath="//div[@class='left-side']//div[contains(@class,'block_features-anction')]//*[contains(@class,'detail-features')]/ul/li[contains(.,'€') and not(contains(.,'rata'))]"
+                mapping="Prezzo" typeName="System.Double" maxSize="-1" minSize="0"
+                nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="&#xA;" newText="" caseSensitive="false" />
+                        <add text="&amp;amp;euro; " newText="" />
+                        <add text="&amp;euro; " newText="" />
+                        <add text="null" newText="0" caseSensitive="false" />
+                        <add text="€" newText="" caseSensitive="false" />
+                        <add text="." newText="" caseSensitive="true" />
+                        <add text="al mese" newText="" caseSensitive="false" />
+                        <add text=" " newText="" caseSensitive="false" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{contratto}" xPath="//title" mapping="Proposta" typeName="System.String"
+                maxSize="255" minSize="0" nullable="true" applyReplacementsBefore="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                        <add text="- Immobiliare.it" newText="" />
+                        <add text="Immobile in " newText="" />
+                        <add text="Vendita" newText="VENDITA" />
+                        <add text="Affitto" newText="AFFITTO" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                        <add start="0" startIsSearchFor="false" end=" " endIsSearchFor="true"
+                            fromLeft="true" />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{codice_annuncio}" xPath="//*[@id=&quot;sticky-contact-bottom&quot;]//dt[contains(.,'Riferimento e Data annuncio')]/following-sibling::dd[1]"
+                mapping="Riferimento" typeName="System.String" maxSize="255"
+                minSize="0" nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions trimLeft="false" trimRight="false" toUpperCase="false"
+                    toLowerCase="false">
+                    <replacements>
+                        <clear />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{descrizione2}" xPath="//*[@id='description']/div//text()"
+                mapping="Descrizione2" typeName="System.String" maxSize="-1"
+                nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions>
+                    <replacements>
+                        <clear />
+                        <add text=" - " newText="" />
+                        <add text="&#xA;" newText=" " />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                        <add start=" - " startIsSearchFor="true" end="\e" endIsSearchFor="true"
+                            fromLeft="true" />
+                    </substrings>
+                </actions>
+            </add>
+            <add name="{riferimento_e_data_annuncio}" xPath="//*[@id=&quot;sticky-contact-bottom&quot;]//dt[contains(.,'Riferimento e Data annuncio')]/following-sibling::dd[1]"
+                mapping="Riferimento" typeName="System.String" maxSize="-1"
+                nullable="true">
+                <controlAppearance controlName="" controlTypeName="" visible="Empty"
+                    enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                    customized="False">
+                    <size width="0" height="0" customized="False" />
+                    <location x="0" y="0" customized="False" />
+                    <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                        customized="False" />
+                    <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                </controlAppearance>
+                <columnAppearance caption="" index="-1" visible="Empty" enabled="Empty"
+                    readonly="Empty" customized="False">
+                    <header customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </header>
+                    <content customized="False">
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </content>
+                    <columnEdit controlName="" controlTypeName="" visible="Empty"
+                        enabled="Empty" readonly="Empty" dockStyle="None" borderStyle="FixedSingle"
+                        customized="False">
+                        <size width="0" height="0" customized="False" />
+                        <location x="0" y="0" customized="False" />
+                        <font size="10" bold="Empty" italic="Empty" underline="Empty"
+                            customized="False" />
+                        <background primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                        <foreground primary="FFFFFF" secondary="FFFFFF" customized="False" />
+                    </columnEdit>
+                </columnAppearance>
+                <actions>
+                    <replacements>
+                        <clear />
+                        <add text="(" newText="" />
+                        <add text=")" newText="" />
+                    </replacements>
+                    <substrings>
+                        <clear />
+                    </substrings>
+                </actions>
+            </add>
+        </features>
+    </featuresSection>
+</configuration>

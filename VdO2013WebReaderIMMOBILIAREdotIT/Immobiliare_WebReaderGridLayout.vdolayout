@@ -1,0 +1,1006 @@
+﻿<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion" />
+  <property name="OptionsBehavior" isnull="true" iskey="true">
+    <property name="EditorShowMode">MouseDownFocused</property>
+  </property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowDetailButtons">false</property>
+  </property>
+  <property name="FixedLineWidth">2</property>
+  <property name="IndicatorWidth">-1</property>
+  <property name="ColumnPanelRowHeight">-1</property>
+  <property name="RowSeparatorHeight">0</property>
+  <property name="FooterPanelHeight">-1</property>
+  <property name="HorzScrollVisibility">Auto</property>
+  <property name="VertScrollVisibility">Auto</property>
+  <property name="RowHeight">64</property>
+  <property name="GroupRowHeight">-1</property>
+  <property name="GroupFormat">{0}: [#image]{1} {2}</property>
+  <property name="ChildGridLevelName" />
+  <property name="VertScrollTipFieldName" />
+  <property name="PreviewFieldName" />
+  <property name="GroupPanelText" />
+  <property name="NewItemRowText" />
+  <property name="LevelIndent">-1</property>
+  <property name="PreviewIndent">-1</property>
+  <property name="PreviewLineCount">-1</property>
+  <property name="ScrollStyle">LiveVertScroll, LiveHorzScroll</property>
+  <property name="FocusRectStyle">CellFocus</property>
+  <property name="HorzScrollStep">3</property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="OptionsLayout" isnull="true" iskey="true">
+    <property name="StoreAppearance">true</property>
+    <property name="StoreAllOptions">true</property>
+    <property name="Columns" isnull="true" iskey="true">
+      <property name="RemoveOldColumns">false</property>
+      <property name="StoreAppearance">true</property>
+      <property name="StoreAllOptions">true</property>
+    </property>
+  </property>
+  <property name="ViewCaptionHeight">-1</property>
+  <property name="Columns" iskey="true" value="59">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Name">colID</property>
+      <property name="FieldName">ID</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Name">colCodice</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMove">false</property>
+        <property name="AllowShowHide">false</property>
+      </property>
+      <property name="ToolTip">OBBLIGATORIO / UNIVOCO</property>
+      <property name="FieldName">Codice</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">1</property>
+      <property name="Visible">true</property>
+      <property name="Width">120</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">120</property>
+      <property name="MaxWidth">120</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Name">colOrdina</property>
+      <property name="FieldName">Ordina</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName" />
+      <property name="Width">40</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+          <property name="VAlignment">Center</property>
+        </property>
+      </property>
+      <property name="MinWidth">40</property>
+      <property name="MaxWidth">40</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Name">colStampa</property>
+      <property name="ToolTip">Stampa abilitata</property>
+      <property name="Caption"> </property>
+      <property name="CustomizationCaption">Stampa</property>
+      <property name="ImageAlignment">Far</property>
+      <property name="FieldName">Stampa</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">13</property>
+      <property name="Visible">true</property>
+      <property name="Width">50</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Far</property>
+        </property>
+      </property>
+      <property name="MinWidth">50</property>
+      <property name="MaxWidth">50</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Name">colLink</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+        <property name="AllowAutoFilter">false</property>
+        <property name="AllowFilterModeChanging">True</property>
+      </property>
+      <property name="ToolTip">URL QR-Code</property>
+      <property name="Caption">URL</property>
+      <property name="FieldName">Link</property>
+      <property name="Fixed">Right</property>
+      <property name="ColumnEditName">rieReaderResult_HyperLinkEdit</property>
+      <property name="VisibleIndex">19</property>
+      <property name="Visible">true</property>
+      <property name="Width">40</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseFont">true</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">40</property>
+      <property name="MaxWidth">40</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Name">colImageFileName</property>
+      <property name="FieldName">ImageFileName</property>
+      <property name="ColumnEditName">rieReaderResult_PictureEditEditable</property>
+      <property name="Width">64</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Name">colQRCodeFileName</property>
+      <property name="FieldName">QRCodeFileName</property>
+      <property name="ColumnEditName">rieReaderResult_PictureEditReadOnly</property>
+      <property name="Width">64</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Name">coldescrizione</property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+      </property>
+      <property name="OptionsEditForm" isnull="true" iskey="true">
+        <property name="UseEditorColRowSpan">false</property>
+      </property>
+      <property name="Caption">Descrizione</property>
+      <property name="ImageIndex">2</property>
+      <property name="FieldName">descrizione</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+      <property name="Width">313</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="VAlignment">Center</property>
+        </property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">200</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Name">colzona</property>
+      <property name="Caption">Località</property>
+      <property name="FieldName">Zona</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+      <property name="VisibleIndex">6</property>
+      <property name="Visible">true</property>
+      <property name="Width">150</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="VAlignment">Center</property>
+        </property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">100</property>
+      <property name="MaxWidth">150</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Name">coltipologia</property>
+      <property name="Caption">Tipologia</property>
+      <property name="FieldName">Tipologia</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">8</property>
+      <property name="Visible">true</property>
+      <property name="Width">120</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">70</property>
+      <property name="MaxWidth">120</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Name">colnMq</property>
+      <property name="Caption">m²</property>
+      <property name="FieldName">Mq</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">9</property>
+      <property name="Visible">true</property>
+      <property name="Width">80</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">80</property>
+      <property name="MaxWidth">80</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Name">colnLocali</property>
+      <property name="Caption">Vani</property>
+      <property name="FieldName">Locali</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">10</property>
+      <property name="Visible">true</property>
+      <property name="Width">80</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseForeColor">true</property>
+          <property name="UseTextOptions">true</property>
+          <property name="UseBackColor">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="ForeColor">Black</property>
+        <property name="BackColor">Transparent</property>
+        <property name="BackColor2">Transparent</property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+          <property name="VAlignment">Center</property>
+        </property>
+        <property name="GradientMode">Vertical</property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">80</property>
+      <property name="MaxWidth">80</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="Name">colbox</property>
+      <property name="FieldName">box</property>
+      <property name="ColumnEditName" />
+      <property name="Width">94</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="Name">colstato</property>
+      <property name="FieldName">stato</property>
+      <property name="ColumnEditName" />
+      <property name="Width">94</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="Name">colarredamento</property>
+      <property name="FieldName">arredamento</property>
+      <property name="ColumnEditName" />
+      <property name="Width">94</property>
+    </property>
+    <property name="Item16" isnull="true" iskey="true">
+      <property name="Name">colclasse_energetica</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMove">false</property>
+        <property name="AllowSort">False</property>
+      </property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+        <property name="AllowAutoFilter">false</property>
+      </property>
+      <property name="ToolTip">Classe Energetica</property>
+      <property name="Caption">C.E.</property>
+      <property name="FieldName">ClasseEnergetica</property>
+      <property name="Fixed">Right</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+      <property name="VisibleIndex">17</property>
+      <property name="Visible">true</property>
+      <property name="Width">150</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+          <property name="VAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">150</property>
+      <property name="MaxWidth">150</property>
+    </property>
+    <property name="Item17" isnull="true" iskey="true">
+      <property name="Name">colprezzo</property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+        <property name="AllowAutoFilter">false</property>
+      </property>
+      <property name="Caption">Prezzo</property>
+      <property name="FieldName">Prezzo</property>
+      <property name="Fixed">Right</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">18</property>
+      <property name="Visible">true</property>
+      <property name="Width">150</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseForeColor">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="ForeColor">Red</property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseForeColor">true</property>
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="ForeColor">Black</property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="DisplayFormat" isnull="true" iskey="true">
+        <property name="FormatString">c0</property>
+        <property name="FormatType">Numeric</property>
+      </property>
+      <property name="MinWidth">150</property>
+      <property name="MaxWidth">150</property>
+    </property>
+    <property name="Item18" isnull="true" iskey="true">
+      <property name="Name">colproposta</property>
+      <property name="Caption">Contratto</property>
+      <property name="FieldName">Proposta</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">5</property>
+      <property name="Visible">true</property>
+      <property name="Width">120</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseFont">true</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold, Italic</property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">120</property>
+      <property name="MaxWidth">150</property>
+    </property>
+    <property name="Item19" isnull="true" iskey="true">
+      <property name="Name">addQRCodeFileName</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="ReadOnly">true</property>
+      </property>
+      <property name="FieldName">QRCode</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName" />
+      <property name="Width">60</property>
+      <property name="MinWidth">60</property>
+      <property name="MaxWidth">60</property>
+      <property name="UnboundType">Object</property>
+    </property>
+    <property name="Item20" isnull="true" iskey="true">
+      <property name="Name">addImageFileName</property>
+      <property name="FieldName">Image</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName" />
+      <property name="Width">90</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+      </property>
+      <property name="MinWidth">90</property>
+      <property name="MaxWidth">90</property>
+      <property name="UnboundType">Object</property>
+    </property>
+    <property name="Item21" isnull="true" iskey="true">
+      <property name="Name">colStatus</property>
+      <property name="FieldName">Status</property>
+      <property name="ColumnEditName">rieReaderResult_ComboBox_Status</property>
+      <property name="Width">65</property>
+    </property>
+    <property name="Item22" isnull="true" iskey="true">
+      <property name="Name">colFascettaImage</property>
+      <property name="FieldName">FascettaImage</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+      <property name="Width">59</property>
+    </property>
+    <property name="Item23" isnull="true" iskey="true">
+      <property name="Name">colFascettaTesto</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMove">false</property>
+      </property>
+      <property name="Caption">Testo Fascetta</property>
+      <property name="FieldName">FascettaTesto</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">3</property>
+      <property name="Visible">true</property>
+      <property name="Width">100</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseForeColor">true</property>
+          <property name="UseBackColor">true</property>
+        </property>
+        <property name="ForeColor">White</property>
+        <property name="BackColor">Red</property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">100</property>
+      <property name="MaxWidth">100</property>
+    </property>
+    <property name="Item24" isnull="true" iskey="true">
+      <property name="Name">colPostoAuto</property>
+      <property name="FieldName">PostoAuto</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item25" isnull="true" iskey="true">
+      <property name="Name">colReaderResult_QRCodeFileName</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="ReadOnly">true</property>
+      </property>
+      <property name="FieldName">QRCode</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName">rieReaderResult_PictureEditReadOnly</property>
+      <property name="UnboundType">Object</property>
+    </property>
+    <property name="Item26" isnull="true" iskey="true">
+      <property name="Name">colReaderResult_ImageFileName</property>
+      <property name="Caption">Foto</property>
+      <property name="FieldName">Image</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName">rieReaderResult_PictureEditEditable</property>
+      <property name="Width">100</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">100</property>
+      <property name="MaxWidth">100</property>
+      <property name="UnboundType">Object</property>
+    </property>
+    <property name="Item27" isnull="true" iskey="true">
+      <property name="Name">colImageFileName2</property>
+      <property name="FieldName">ImageFileName2</property>
+      <property name="ColumnEditName" />
+      <property name="Width">64</property>
+    </property>
+    <property name="Item28" isnull="true" iskey="true">
+      <property name="Name">colImageFileName3</property>
+      <property name="FieldName">ImageFileName3</property>
+      <property name="ColumnEditName" />
+      <property name="Width">64</property>
+    </property>
+    <property name="Item29" isnull="true" iskey="true">
+      <property name="Name">colImageFileName4</property>
+      <property name="FieldName">ImageFileName4</property>
+      <property name="ColumnEditName" />
+      <property name="Width">64</property>
+    </property>
+    <property name="Item30" isnull="true" iskey="true">
+      <property name="Name">colImageFileName5</property>
+      <property name="FieldName">ImageFileName5</property>
+      <property name="ColumnEditName" />
+      <property name="Width">64</property>
+    </property>
+    <property name="Item31" isnull="true" iskey="true">
+      <property name="Name">colReaderResult_ImageFileName2</property>
+      <property name="ToolTip">Foto 2 solo cartello</property>
+      <property name="Caption">Foto 2</property>
+      <property name="FieldName">Image2</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName">rieReaderResult_PictureEditEditable</property>
+      <property name="Width">90</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">90</property>
+      <property name="MaxWidth">90</property>
+      <property name="UnboundType">Object</property>
+    </property>
+    <property name="Item32" isnull="true" iskey="true">
+      <property name="Name">colReaderResult_ImageFileName3</property>
+      <property name="ToolTip">Foto 3 solo cartello</property>
+      <property name="Caption">Foto 3</property>
+      <property name="FieldName">Image3</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName">rieReaderResult_PictureEditEditable</property>
+      <property name="Width">90</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">90</property>
+      <property name="MaxWidth">90</property>
+      <property name="UnboundType">Object</property>
+    </property>
+    <property name="Item33" isnull="true" iskey="true">
+      <property name="Name">colReaderResult_ImageFileName4</property>
+      <property name="ToolTip">Solo JPG</property>
+      <property name="Caption">RIEMPITIVO</property>
+      <property name="FieldName">Image4</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName">rieReaderResult_PictureEditEditable</property>
+      <property name="Width">90</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">90</property>
+      <property name="MaxWidth">90</property>
+      <property name="UnboundType">Object</property>
+    </property>
+    <property name="Item34" isnull="true" iskey="true">
+      <property name="Name">colReaderResult_ImageFileName5</property>
+      <property name="ToolTip">Solo PNG trasparenti</property>
+      <property name="Caption">ETICHETTA</property>
+      <property name="FieldName">Image5</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName">rieReaderResult_PictureEditEditable</property>
+      <property name="Width">90</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">90</property>
+      <property name="MaxWidth">90</property>
+      <property name="UnboundType">Object</property>
+    </property>
+    <property name="Item35" isnull="true" iskey="true">
+      <property name="Name">colriferimento</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMove">false</property>
+        <property name="AllowShowHide">false</property>
+      </property>
+      <property name="ToolTip">Riferimento Agenzia</property>
+      <property name="Caption">Rif. Ag.</property>
+      <property name="FieldName">Riferimento</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+      <property name="VisibleIndex">0</property>
+      <property name="Visible">true</property>
+      <property name="Width">60</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="VAlignment">Center</property>
+        </property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseFont">true</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">50</property>
+      <property name="MaxWidth">60</property>
+    </property>
+    <property name="Item36" isnull="true" iskey="true">
+      <property name="Name">colCartello</property>
+      <property name="ToolTip">Offerta selezionata per il cartello</property>
+      <property name="Caption"> </property>
+      <property name="CustomizationCaption">Cartello</property>
+      <property name="ImageAlignment">Far</property>
+      <property name="FieldName">Cartello</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">15</property>
+      <property name="Visible">true</property>
+      <property name="Width">80</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Far</property>
+        </property>
+      </property>
+      <property name="MinWidth">80</property>
+      <property name="MaxWidth">80</property>
+    </property>
+    <property name="Item37" isnull="true" iskey="true">
+      <property name="Name">colInsertDate</property>
+      <property name="FieldName">InsertDate</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item38" isnull="true" iskey="true">
+      <property name="Name">colUpdateDate</property>
+      <property name="FieldName">UpdateDate</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item39" isnull="true" iskey="true">
+      <property name="Name">colReaderName</property>
+      <property name="FieldName">ReaderName</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item40" isnull="true" iskey="true">
+      <property name="Name">colOrdinal</property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+        <property name="AllowAutoFilter">false</property>
+      </property>
+      <property name="ToolTip">Ordinamento di stampa</property>
+      <property name="Caption"> </property>
+      <property name="CustomizationCaption">Ordinamento</property>
+      <property name="ImageAlignment">Far</property>
+      <property name="FieldName">Ordinal</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">4</property>
+      <property name="Visible">true</property>
+      <property name="Width">40</property>
+      <property name="MaxWidth">40</property>
+    </property>
+    <property name="Item41" isnull="true" iskey="true">
+      <property name="Name">colImageFileName1</property>
+      <property name="FieldName">ImageFileName1</property>
+      <property name="ColumnEditName" />
+      <property name="Width">64</property>
+    </property>
+    <property name="Item42" isnull="true" iskey="true">
+      <property name="Name">colReaderResult_ImageFileName1</property>
+      <property name="Caption">Foto</property>
+      <property name="FieldName">Image</property>
+      <property name="Fixed">Left</property>
+      <property name="ColumnEditName">rieReaderResult_PictureEditEditable</property>
+      <property name="VisibleIndex">2</property>
+      <property name="Visible">true</property>
+      <property name="Width">100</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">100</property>
+      <property name="MaxWidth">100</property>
+      <property name="UnboundType">Object</property>
+    </property>
+    <property name="Item43" isnull="true" iskey="true">
+      <property name="Name">colDescrizioneBreve</property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+      </property>
+      <property name="ImageIndex">0</property>
+      <property name="FieldName">Descrizione Breve</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+      <property name="Width">122</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="VAlignment">Center</property>
+        </property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+    </property>
+    <property name="Item44" isnull="true" iskey="true">
+      <property name="Name">colDescrizione Breve</property>
+      <property name="Caption">Descrizione Breve</property>
+      <property name="FieldName">Descrizione Breve</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+      <property name="Width">93</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+    </property>
+    <property name="Item45" isnull="true" iskey="true">
+      <property name="Name">colIndirizzo</property>
+      <property name="FieldName">Indirizzo</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">7</property>
+      <property name="Visible">true</property>
+      <property name="Width">163</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+    </property>
+    <property name="Item46" isnull="true" iskey="true">
+      <property name="Name">coldescrizione2</property>
+      <property name="Caption">Descrizione Breve</property>
+      <property name="FieldName">descrizione2</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+      <property name="Width">246</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+    </property>
+    <property name="Item47" isnull="true" iskey="true">
+      <property name="Name">colnBagni</property>
+      <property name="Caption">Bagni</property>
+      <property name="FieldName">nBagni</property>
+      <property name="ColumnEditName" />
+      <property name="VisibleIndex">11</property>
+      <property name="Visible">true</property>
+      <property name="Width">80</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+          <property name="VAlignment">Center</property>
+        </property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 7.8pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">80</property>
+      <property name="MaxWidth">80</property>
+    </property>
+    <property name="Item48" isnull="true" iskey="true">
+      <property name="Name">colTitolo</property>
+      <property name="Caption">Titolo</property>
+      <property name="FieldName">Titolo</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+      <property name="VisibleIndex">12</property>
+      <property name="Visible">true</property>
+      <property name="Width">100</property>
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseFont">true</property>
+        </property>
+        <property name="Font">Microsoft Sans Serif, 9pt</property>
+      </property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+      <property name="MinWidth">80</property>
+      <property name="MaxWidth">100</property>
+    </property>
+    <property name="Item49" isnull="true" iskey="true">
+      <property name="Name">colDescrizioneCartello</property>
+      <property name="OptionsFilter" isnull="true" iskey="true">
+        <property name="AllowFilter">false</property>
+      </property>
+      <property name="FieldName">Descrizione Cartello</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+      <property name="VisibleIndex">16</property>
+      <property name="Visible">true</property>
+      <property name="Width">280</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 7.8pt, style=Bold</property>
+      </property>
+    </property>
+    <property name="Item50" isnull="true" iskey="true">
+      <property name="Name">colDescrizione</property>
+      <property name="FieldName">Descrizione</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+      <property name="VisibleIndex">14</property>
+      <property name="Visible">true</property>
+      <property name="Width">213</property>
+      <property name="AppearanceHeader" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+          <property name="UseFont">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Center</property>
+        </property>
+        <property name="Font">Tahoma, 8.25pt, style=Bold</property>
+      </property>
+    </property>
+    <property name="Item51" isnull="true" iskey="true">
+      <property name="Name">colZona</property>
+      <property name="FieldName">Zona</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item52" isnull="true" iskey="true">
+      <property name="Name">colTipologia</property>
+      <property name="FieldName">Tipologia</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item53" isnull="true" iskey="true">
+      <property name="Name">colMq</property>
+      <property name="FieldName">Mq</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item54" isnull="true" iskey="true">
+      <property name="Name">colLocali</property>
+      <property name="FieldName">Locali</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item55" isnull="true" iskey="true">
+      <property name="Name">colClasseEnergetica</property>
+      <property name="FieldName">ClasseEnergetica</property>
+      <property name="ColumnEditName">rieReaderResult_MemoEditEditable</property>
+    </property>
+    <property name="Item56" isnull="true" iskey="true">
+      <property name="Name">colPrezzo</property>
+      <property name="FieldName">Prezzo</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item57" isnull="true" iskey="true">
+      <property name="Name">colProposta</property>
+      <property name="FieldName">Proposta</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item58" isnull="true" iskey="true">
+      <property name="Name">colRiferimento</property>
+      <property name="FieldName">Riferimento</property>
+      <property name="ColumnEditName" />
+    </property>
+    <property name="Item59" isnull="true" iskey="true">
+      <property name="Name">colDescrizione2</property>
+      <property name="FieldName">Descrizione2</property>
+      <property name="ColumnEditName" />
+    </property>
+  </property>
+  <property name="ViewCaption" />
+  <property name="BorderStyle">Default</property>
+  <property name="SynchronizeClones">true</property>
+  <property name="DetailTabHeaderLocation">Top</property>
+  <property name="Name">viwGrid</property>
+  <property name="DetailHeight">350</property>
+  <property name="Tag" isnull="true" />
+  <property name="GroupSummary" iskey="true" value="0" />
+  <property name="ActiveFilterString" />
+  <property name="MRUFilters">~Xtra#Base64AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFHcmlkLnYxNi4yLCBWZXJzaW9uPTE2LjIuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAAADZEZXZFeHByZXNzLlh0cmFHcmlkLlZpZXdzLkJhc2UuTVJVVmlld0ZpbHRlckNvbGxlY3Rpb24BAAAAE0NvbGxlY3Rpb25CYXNlK2xpc3QDHFN5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3QCAAAACQMAAAAEAwAAABxTeXN0ZW0uQ29sbGVjdGlvbnMuQXJyYXlMaXN0AwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24FAAAICAkEAAAABwAAAGkAAAAQBAAAAAgAAAAJBQAAAAkGAAAACQcAAAAJCAAAAAkJAAAACQoAAAAJCwAAAAoMDAAAAFlEZXZFeHByZXNzLkRhdGEudjE2LjIsIFZlcnNpb249MTYuMi41LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YQUFAAAAKURldkV4cHJlc3MuWHRyYUdyaWQuVmlld3MuQmFzZS5WaWV3RmlsdGVyAgAAABhmTm9uQ29sdW1uRmlsdGVyQ3JpdGVyaWETQ29sbGVjdGlvbkJhc2UrbGlzdAQDKkRldkV4cHJlc3MuRGF0YS5GaWx0ZXJpbmcuQ3JpdGVyaWFPcGVyYXRvcgwAAAAcU3lzdGVtLkNvbGxlY3Rpb25zLkFycmF5TGlzdAIAAAAKCQ0AAAABBgAAAAUAAAAKCQ4AAAABBwAAAAUAAAAKCQ8AAAABCAAAAAUAAAAKCRAAAAABCQAAAAUAAAAKCREAAAABCgAAAAUAAAAKCRIAAAABCwAAAAUAAAAKCRMAAAABDQAAAAMAAAAJFAAAAAEAAAADAAAAAQ4AAAADAAAACRUAAAABAAAAAwAAAAEPAAAAAwAAAAkWAAAAAQAAAAMAAAABEAAAAAMAAAAJFwAAAAEAAAADAAAAAREAAAADAAAACRgAAAABAAAAAwAAAAESAAAAAwAAAAkZAAAAAQAAAAMAAAABEwAAAAMAAAAJGgAAAAEAAAADAAAAEBQAAAAEAAAACRsAAAANAxAVAAAABAAAAAkcAAAADQMQFgAAAAQAAAAJHQAAAA0DEBcAAAAEAAAACR4AAAANAxAYAAAABAAAAAkfAAAADQMQGQAAAAQAAAAJIAAAAA0DEBoAAAAEAAAACSEAAAANAwwiAAAAGURldkV4cHJlc3MuWHRyYUdyaWQudjE2LjIFGwAAADNEZXZFeHByZXNzLlh0cmFHcmlkLlZpZXdzLkJhc2UuVmlld0NvbHVtbkZpbHRlckluZm8CAAAABkZpbHRlcgZDb2x1bW4EASxEZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuQ29sdW1uRmlsdGVySW5mbyIAAAAiAAAACSMAAAAGJAAAAAtjb2xwcm9wb3N0YQEcAAAAGwAAAAklAAAACSQAAAABHQAAABsAAAAJJwAAAAkkAAAAAR4AAAAbAAAACSkAAAAJJAAAAAEfAAAAGwAAAAkrAAAACSQAAAABIAAAABsAAAAJLQAAAAkkAAAAASEAAAAbAAAACS8AAAAJJAAAAAUjAAAALERldkV4cHJlc3MuWHRyYUdyaWQuQ29sdW1ucy5Db2x1bW5GaWx0ZXJJbmZvBQAAAARUeXBlBEtpbmQLRGlzcGxheVRleHQMRmlsdGVyU3RyaW5nBVZhbHVlAAABAQIICCIAAAABAAAAAQAAAAYxAAAAAAYyAAAAHU5vdCBJc051bGxPckVtcHR5KFtwcm9wb3N0YV0pCgElAAAAIwAAAAEAAAABAAAACTEAAAAGNAAAABlJc051bGxPckVtcHR5KFtwcm9wb3N0YV0pCgEnAAAAIwAAAAEAAAAAAAAACTEAAAAGNgAAABZbcHJvcG9zdGFdID0gJ0FGRklUVE8nCgEpAAAAIwAAAAEAAAAAAAAACTEAAAAGOAAAAB5bcHJvcG9zdGFdID0gJ1ZFTkRJVEEgaW4gYXN0YScKASsAAAAjAAAAAQAAAAAAAAAJMQAAAAY6AAAAF1twcm9wb3N0YV0gPSAnVkVORElUQSAnCgEtAAAAIwAAAAEAAAAAAAAACTEAAAAGPAAAABZbcHJvcG9zdGFdID0gJ1ZFTkRJVEEnCgEvAAAAIwAAAAEAAAAAAAAACTEAAAAGPgAAABdbcHJvcG9zdGFdID0gJ0FGRklUVE8gJwoL</property>
+  <property name="SortInfo">~Xtra#Base64AAEAAAD/////AQAAAAAAAAAMAgAAAF1EZXZFeHByZXNzLlh0cmFHcmlkLnYxNi4yLCBWZXJzaW9uPTE2LjIuNS4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEFAQAAADhEZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuR3JpZENvbHVtblNvcnRJbmZvQ29sbGVjdGlvbgQAAAAKZ3JvdXBDb3VudAVjbG9uZQ9jbG9uZUdyb3VwQ291bnQTQ29sbGVjdGlvbkJhc2UrbGlzdAADAAMIsgFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW0RldkV4cHJlc3MuWHRyYUdyaWQuQ29sdW1ucy5HcmlkQ29sdW1uU29ydEluZm8sIERldkV4cHJlc3MuWHRyYUdyaWQudjE2LjIsIFZlcnNpb249MTYuMi41LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YV1dCBxTeXN0ZW0uQ29sbGVjdGlvbnMuQXJyYXlMaXN0AgAAAAAAAAAJAwAAAAAAAAAJBAAAAAQDAAAAsgFTeXN0ZW0uQ29sbGVjdGlvbnMuR2VuZXJpYy5MaXN0YDFbW0RldkV4cHJlc3MuWHRyYUdyaWQuQ29sdW1ucy5HcmlkQ29sdW1uU29ydEluZm8sIERldkV4cHJlc3MuWHRyYUdyaWQudjE2LjIsIFZlcnNpb249MTYuMi41LjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjg4ZDE3NTRkNzAwZTQ5YV1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24EAAAwRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mb1tdAgAAAAgICQUAAAAAAAAAAAAAAAQEAAAAHFN5c3RlbS5Db2xsZWN0aW9ucy5BcnJheUxpc3QDAAAABl9pdGVtcwVfc2l6ZQhfdmVyc2lvbgUAAAgICQYAAAABAAAAHAAAAAcFAAAAAAEAAAAAAAAABC5EZXZFeHByZXNzLlh0cmFHcmlkLkNvbHVtbnMuR3JpZENvbHVtblNvcnRJbmZvAgAAABAGAAAABAAAAAkHAAAADQMMCAAAABlEZXZFeHByZXNzLlh0cmFHcmlkLnYxNi4yBQcAAAAuRGV2RXhwcmVzcy5YdHJhR3JpZC5Db2x1bW5zLkdyaWRDb2x1bW5Tb3J0SW5mbwIAAAAJU29ydE9yZGVyCkNvbHVtbk5hbWUAAQgIAAAAAQAAAAYJAAAADmNvbERlc2NyaXppb25lCw==</property>
+  <property name="FormatConditions" iskey="true" value="0" />
+  <property name="GroupSummarySortInfoState" />
+  <property name="FindFilterText" />
+  <property name="FindPanelVisible">true</property>
+</XtraSerializer>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<element
+  type="VdO2013WebReaderIMMOBILIAREdotIT.SiteReader"
+  assembly="VdO2013WebReaderIMMOBILIAREdotIT, Version=1.0.0.2, Culture=neutral, PublicKeyToken=927f339cfbdcaccf"
+  propertyCount="36">
+  <property
+    name="Name"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">VdO2013WebReaderIMMOBILIAREdotIT.SiteReader</property>
+  <property
+    name="Guid"
+    type="System.Guid"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"><![CDATA[5c172f10-4976-449f-a179-091cda6e5e93]]></property>
+  <property
+    name="Author"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Paolo Mancini</property>
+  <property
+    name="Copyright"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">LogicNet 2017</property>
+  <property
+    name="Url"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">http://www.logicnet.it</property>
+  <property
+    name="Description"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Lettore per immobiliare.it</property>
+  <property
+    name="Version"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">2.00.00.00</property>
+  <property
+    name="ReleaseDate"
+    type="System.DateTime"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">2017-02-01T00:00:00Z</property>
+  <property
+    name="Agenzia"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Faro_Roma</property>
+  <property
+    name="SaveTimeStamp"
+    type="System.DateTime"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">2017-04-17T16:55:12.2454284Z</property>
+  <property
+    name="SettingsVersion"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">2.0.1.7</property>
+  <property
+    name="SettingsReleaseDate"
+    type="System.DateTime"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">2017-02-01T00:00:00Z</property>
+  <property
+    name="UrlText"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">/agenzie_immobiliari/{codice agenzia}.html?pag={indice lista}</property>
+  <property
+    name="UrlRedirectsText"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">/terreni</property>
+  <property
+    name="ListXPath"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">//*[@id='listing-container']/li//p[@class='titolo text-primary']/a</property>
+  <property
+    name="FeaturesXPath"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">//*[@id='sticky-contact-bottom']//*[@class='row section-data']/dl</property>
+  <property
+    name="ImageFormatName"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></property>
+  <property
+    name="ImageXPath"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">//*[@id='foto']//*[@class='labs-gallery__slide']/img</property>
+  <property
+    name="ImageActiveXPath"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></property>
+  <property
+    name="ImageThumbsXPath"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"></property>
+  <property
+    name="MergeDefinitionName"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=927f339cfbdcaccf</property>
+  <property
+    name="MergeDefinitionKeyFields"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=927f339cfbdcaccf|MergeContext=Column|MergeKind=IsKey|ReaderName|Codice|</property>
+  <property
+    name="MergeDefinitionColExclude"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=927f339cfbdcaccf|MergeContext=Column|MergeKind=Exclude|Ordinal|</property>
+  <property
+    name="MergeDefinitionRowExclude"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">IVDefinitionTypeName=VdO2013Data.OfferteData, VdO2013Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=927f339cfbdcaccf|MergeContext=Row|MergeKind=Exclude|Status=Locked|</property>
+  <property
+    name="Elementi"
+    type="System.Int32"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">24</property>
+  <property
+    name="Pagine"
+    type="System.Int32"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">1</property>
+  <property
+    name="ItemCountXPath"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">//*[@id='pageCount']</property>
+  <property
+    name="RagioneSocialeXPath"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">//*[@class='body-content agency-page']//*[@class='agency-title text-uppercase']</property>
+  <property
+    name="Tipologia"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">Tutte</property>
+  <property
+    name="RagioneSociale"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">FARO IMMOBILIARE srl</property>
+  <property
+    name="LoadTimeStamp"
+    type="System.DateTime"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">2017-04-17T16:52:21.1805536Z</property>
+  <property
+    name="SetPageListFeaturesEnabled"
+    type="System.Boolean"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">false</property>
+  <property
+    name="SetPageListFeaturesXPath"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">//*[@id='sticky-contact-bottom']//*[@class='row section-data']/dl</property>
+  <property
+    name="FeaturesEnabled"
+    type="System.Boolean"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">true</property>
+  <property
+    name="NormalSiteUrl"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">https://www.immobiliare.it</property>
+  <property
+    name="MobileSiteUrl"
+    type="System.String"
+    assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">https://m.immobiliare.it</property>
+  <collection
+    type="MPUtils.PluginFactory.Generic.ElementCollection`1[[MPUtils.PluginFactory.Generic.OptionElement`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], MPUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=927f339cfbdcaccf]]"
+    assembly="MPUtils.PluginFactory.Generic.ElementCollection`1[[MPUtils.PluginFactory.Generic.OptionElement`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], MPUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=927f339cfbdcaccf]]"
+    elementCount="1">
+    <element
+      type="MPUtils.PluginFactory.Generic.OptionElement`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+      assembly="MPUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=927f339cfbdcaccf"
+      propertyCount="2">
+      <property
+        name="Name"
+        type="System.String"
+        assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">opzione</property>
+      <property
+        name="Value"
+        type="System.String"
+        assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">&lt;null&gt;</property>
+    </element>
+  </collection>
+  <collection
+    type="MPUtils.PluginFactory.Generic.ElementCollection`1[[MPUtils.PluginFactory.ScriptElement, MPUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=927f339cfbdcaccf]]"
+    assembly="MPUtils.PluginFactory.Generic.ElementCollection`1[[MPUtils.PluginFactory.ScriptElement, MPUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=927f339cfbdcaccf]]"
+    elementCount="1">
+    <element
+      type="MPUtils.PluginFactory.ScriptElement"
+      assembly="MPUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=927f339cfbdcaccf"
+      propertyCount="2">
+      <property
+        name="Name"
+        type="System.String"
+        assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">script</property>
+      <property
+        name="Value"
+        type="System.String"
+        assembly="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">System.Console.WriteLine("{0}({1})", "&lt;empty&gt;", 0);</property>
+    </element>
+  </collection>
+</element>
