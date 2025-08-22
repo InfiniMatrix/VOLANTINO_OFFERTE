@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC1FC1B0-BE84-4164-96CC-6606DE517F90}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VdO2013TH</RootNamespace>
+    <AssemblyName>VdO2013TH</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <NuGetPackageImportStamp>84c110c1</NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\vdo_bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\vdo_bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MPCommonRes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acafc287d91522dd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vdo_bin\MPCommonRes.dll</HintPath>
+    </Reference>
+    <Reference Include="MPExtensionMethods, Version=3.0.0.0, Culture=neutral, PublicKeyToken=acafc287d91522dd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vdo_bin\MPExtensionMethods.dll</HintPath>
+    </Reference>
+    <Reference Include="MPLogHelper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acafc287d91522dd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vdo_bin\MPLogHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="MPMailHelper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acafc287d91522dd, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vdo_bin\MPMailHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="MPUtils, Version=1.0.0.0, Culture=neutral, PublicKeyToken=acafc287d91522dd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vdo_bin\MPUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\CheckOnLineWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\DownloadSiteItemsFillDBWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\DownloadSiteItemsFillXMLWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\DownloadSiteItemsWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\MailSendWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\ProgressItem.cs" />
+    <Compile Include="Classes\ProgressItemCollection.cs" />
+    <Compile Include="Classes\Specialized\SiteReaderOnLineCheckDataList.cs" />
+    <Compile Include="Classes\Specialized\SiteReaderOnLineCheckList.cs" />
+    <Compile Include="Consumers\SiteReaderDownloadConsumer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Consumers\SiteReaderResultTableLinkCheckStatusConsumer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Consumers\SiteReaderWebSiteCheckStatusConsumer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Classes\ProgressListConsumerBase.cs" />
+    <Compile Include="Consumers\ActivationServiceCheckStatusConsumer.cs" />
+    <Compile Include="Consumers\EmailSendConsumer.cs" />
+    <Compile Include="Delegates\ProgressItemAdd.cs" />
+    <Compile Include="Classes\Specialized\MailSendList.cs" />
+    <Compile Include="Classes\Specialized\OnLineCheckList.cs" />
+    <Compile Include="TextRes.cs" />
+    <Compile Include="Workers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VdO2013Core\VdO2013Core.csproj">
+      <Project>{9ea3feb2-d4ab-43da-bbab-7cb22201d120}</Project>
+      <Name>VdO2013Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VdO2013DataCore\VdO2013DataCore.csproj">
+      <Project>{85669c2f-d9d5-4a50-acdd-d2d336cccf96}</Project>
+      <Name>VdO2013DataCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VdO2013Data\VdO2013Data.csproj">
+      <Project>{0dce2a5e-0e15-4590-b2e0-da8ae01cb00f}</Project>
+      <Name>VdO2013Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VdO2013QRCode\VdO2013QRCode.csproj">
+      <Project>{9b7e0e69-8327-43ec-a749-aa71f518816d}</Project>
+      <Name>VdO2013QRCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VdO2013RS\VdO2013RS.csproj">
+      <Project>{ac2e85ca-1d68-418d-aea0-b6b0f0bb9a53}</Project>
+      <Name>VdO2013RS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VdO2013SRCore\VdO2013SRCore.csproj">
+      <Project>{9e2cb695-de7b-42db-89ec-beeaaace4713}</Project>
+      <Name>VdO2013SRCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VdO2013THCore\VdO2013THCore.csproj">
+      <Project>{3c3792aa-71e2-487f-bfa4-8001ceec0508}</Project>
+      <Name>VdO2013THCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="VdO2021.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti sul computer in uso. Abilitare il ripristino dei pacchetti NuGet per scaricarli. Per ulteriori informazioni, visitare http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
+
