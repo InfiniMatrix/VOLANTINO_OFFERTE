@@ -1,0 +1,4 @@
+C:\VdO_Progetto\MPLibraryStubs\bin\Debug\MPLibraryStubs.dll
+C:\VdO_Progetto\MPLibraryStubs\bin\Debug\MPLibraryStubs.pdb
+C:\VdO_Progetto\MPLibraryStubs\obj\Debug\MPLibraryStubs.dll
+C:\VdO_Progetto\MPLibraryStubs\obj\Debug\MPLibraryStubs.pdb
