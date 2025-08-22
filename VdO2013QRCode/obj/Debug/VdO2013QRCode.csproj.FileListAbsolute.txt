@@ -1,0 +1,5 @@
+C:\VdO_Progetto\VdO2013QRCode\obj\Debug\VdO2013QRCode.csprojAssemblyReference.cache
+C:\VdO_Progetto\VdO2013QRCode\obj\Debug\VdO2013QRCode.ctQRCodeDecode.resources
+C:\VdO_Progetto\VdO2013QRCode\obj\Debug\VdO2013QRCode.ctQRCodeEncode.resources
+C:\VdO_Progetto\VdO2013QRCode\obj\Debug\VdO2013QRCode.csproj.GenerateResource.cache
+C:\VdO_Progetto\VdO2013QRCode\obj\Debug\VdO2013QRCode.dll.licenses
